@@ -1,0 +1,1092 @@
+{
+	"self": "https://cadent.atlassian.net/rest/api/2/issue/PLA-6936/changelog?maxResults=100&startAt=0",
+	"maxResults": 100,
+	"startAt": 0,
+	"total": 35,
+	"isLast": true,
+	"values": [
+		{
+			"id": "8793823",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=557058%3A18c9d590-53e6-458d-9f32-cc177b5c1484",
+				"accountId": "557058:18c9d590-53e6-458d-9f32-cc177b5c1484",
+				"emailAddress": "pjovellanos@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/32"
+				},
+				"displayName": "Peter Jovellanos",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-01-29T16:29:04.591+0000",
+			"items": [
+				{
+					"field": "assignee",
+					"fieldtype": "jira",
+					"fieldId": "assignee",
+					"from": null,
+					"fromString": null,
+					"to": "557058:8a67fb03-9325-4e4f-b148-87452163b023",
+					"toString": "Michael Hohenshilt",
+					"tmpFromAccountId": null,
+					"tmpToAccountId": "557058:8a67fb03-9325-4e4f-b148-87452163b023"
+				}
+			]
+		},
+		{
+			"id": "8805666",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-02T15:01:32.540+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked higher"
+				}
+			]
+		},
+		{
+			"id": "8814355",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-03T20:35:02.368+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked lower"
+				}
+			]
+		},
+		{
+			"id": "8816168",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=557058%3A8a67fb03-9325-4e4f-b148-87452163b023",
+				"accountId": "557058:8a67fb03-9325-4e4f-b148-87452163b023",
+				"emailAddress": "mhohenshilt@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/32"
+				},
+				"displayName": "Michael Hohenshilt",
+				"active": true,
+				"timeZone": "US/Eastern",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-04T14:20:35.963+0000",
+			"items": [
+				{
+					"field": "status",
+					"fieldtype": "jira",
+					"fieldId": "status",
+					"from": "11300",
+					"fromString": "Not Started - On Track",
+					"to": "11203",
+					"toString": "Product Acceptance"
+				}
+			]
+		},
+		{
+			"id": "8822460",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-04T21:30:15.023+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked higher"
+				}
+			]
+		},
+		{
+			"id": "8824389",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=6419cdce2cee496759ebc82d",
+				"accountId": "6419cdce2cee496759ebc82d",
+				"emailAddress": "mmcgay@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6419cdce2cee496759ebc82d/c0a5ea29-c020-437a-8fee-1bbdc514ebff/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6419cdce2cee496759ebc82d/c0a5ea29-c020-437a-8fee-1bbdc514ebff/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6419cdce2cee496759ebc82d/c0a5ea29-c020-437a-8fee-1bbdc514ebff/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6419cdce2cee496759ebc82d/c0a5ea29-c020-437a-8fee-1bbdc514ebff/32"
+				},
+				"displayName": "Michael McGay",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-05T15:46:41.143+0000",
+			"items": [
+				{
+					"field": "status",
+					"fieldtype": "jira",
+					"fieldId": "status",
+					"from": "11203",
+					"fromString": "Product Acceptance",
+					"to": "11301",
+					"toString": "Development"
+				}
+			]
+		},
+		{
+			"id": "8826483",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=557058%3A8a67fb03-9325-4e4f-b148-87452163b023",
+				"accountId": "557058:8a67fb03-9325-4e4f-b148-87452163b023",
+				"emailAddress": "mhohenshilt@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/32"
+				},
+				"displayName": "Michael Hohenshilt",
+				"active": true,
+				"timeZone": "US/Eastern",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-05T22:57:53.141+0000",
+			"items": [
+				{
+					"field": "Link",
+					"fieldtype": "jira",
+					"from": null,
+					"fromString": null,
+					"to": "PLA-6966",
+					"toString": "This work item is cloned by PLA-6966"
+				}
+			]
+		},
+		{
+			"id": "8826487",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=557058%3A8a67fb03-9325-4e4f-b148-87452163b023",
+				"accountId": "557058:8a67fb03-9325-4e4f-b148-87452163b023",
+				"emailAddress": "mhohenshilt@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/32"
+				},
+				"displayName": "Michael Hohenshilt",
+				"active": true,
+				"timeZone": "US/Eastern",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-05T22:58:21.674+0000",
+			"items": [
+				{
+					"field": "Link",
+					"fieldtype": "jira",
+					"from": "PLA-6966",
+					"fromString": "This work item is cloned by PLA-6966",
+					"to": null,
+					"toString": null
+				}
+			]
+		},
+		{
+			"id": "8827241",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=557058%3A8a67fb03-9325-4e4f-b148-87452163b023",
+				"accountId": "557058:8a67fb03-9325-4e4f-b148-87452163b023",
+				"emailAddress": "mhohenshilt@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/32"
+				},
+				"displayName": "Michael Hohenshilt",
+				"active": true,
+				"timeZone": "US/Eastern",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-06T14:29:07.045+0000",
+			"items": [
+				{
+					"field": "status",
+					"fieldtype": "jira",
+					"fieldId": "status",
+					"from": "11301",
+					"fromString": "Development",
+					"to": "10301",
+					"toString": "Checked In"
+				}
+			]
+		},
+		{
+			"id": "8827243",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=557058%3A8a67fb03-9325-4e4f-b148-87452163b023",
+				"accountId": "557058:8a67fb03-9325-4e4f-b148-87452163b023",
+				"emailAddress": "mhohenshilt@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/32"
+				},
+				"displayName": "Michael Hohenshilt",
+				"active": true,
+				"timeZone": "US/Eastern",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-06T14:29:18.985+0000",
+			"items": [
+				{
+					"field": "status",
+					"fieldtype": "jira",
+					"fieldId": "status",
+					"from": "10301",
+					"fromString": "Checked In",
+					"to": "11301",
+					"toString": "Development"
+				}
+			]
+		},
+		{
+			"id": "8827991",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-06T16:36:41.324+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked lower"
+				}
+			]
+		},
+		{
+			"id": "8831639",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-09T15:40:00.369+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked lower"
+				}
+			]
+		},
+		{
+			"id": "8833283",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-09T21:26:22.318+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked higher"
+				}
+			]
+		},
+		{
+			"id": "8833429",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-09T22:09:41.363+0000",
+			"items": [
+				{
+					"field": "IssueParentAssociation",
+					"fieldtype": "jira",
+					"from": null,
+					"fromString": null,
+					"to": "750016",
+					"toString": "KPI-55447"
+				}
+			]
+		},
+		{
+			"id": "8837411",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=6419cdce2cee496759ebc82d",
+				"accountId": "6419cdce2cee496759ebc82d",
+				"emailAddress": "mmcgay@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6419cdce2cee496759ebc82d/c0a5ea29-c020-437a-8fee-1bbdc514ebff/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6419cdce2cee496759ebc82d/c0a5ea29-c020-437a-8fee-1bbdc514ebff/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6419cdce2cee496759ebc82d/c0a5ea29-c020-437a-8fee-1bbdc514ebff/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6419cdce2cee496759ebc82d/c0a5ea29-c020-437a-8fee-1bbdc514ebff/32"
+				},
+				"displayName": "Michael McGay",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-10T22:04:27.091+0000",
+			"items": [
+				{
+					"field": "Sprint",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10470",
+					"from": "7803",
+					"fromString": "PI30_PLA_SP 1",
+					"to": "7803, 7804",
+					"toString": "PI30_PLA_SP 1, PI30_PLA_SP 2"
+				}
+			]
+		},
+		{
+			"id": "8837467",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-10T22:10:39.666+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked higher"
+				}
+			]
+		},
+		{
+			"id": "8856409",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=557058%3A8a67fb03-9325-4e4f-b148-87452163b023",
+				"accountId": "557058:8a67fb03-9325-4e4f-b148-87452163b023",
+				"emailAddress": "mhohenshilt@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:8a67fb03-9325-4e4f-b148-87452163b023/83272e30-6c17-4e54-ba11-a3254f427cea/32"
+				},
+				"displayName": "Michael Hohenshilt",
+				"active": true,
+				"timeZone": "US/Eastern",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-19T15:31:36.179+0000",
+			"items": [
+				{
+					"field": "status",
+					"fieldtype": "jira",
+					"fieldId": "status",
+					"from": "11301",
+					"fromString": "Development",
+					"to": "11100",
+					"toString": "Code Review"
+				}
+			]
+		},
+		{
+			"id": "8856670",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-19T16:31:18.731+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked higher"
+				}
+			]
+		},
+		{
+			"id": "8869399",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=6419cdce2cee496759ebc82d",
+				"accountId": "6419cdce2cee496759ebc82d",
+				"emailAddress": "mmcgay@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6419cdce2cee496759ebc82d/c0a5ea29-c020-437a-8fee-1bbdc514ebff/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6419cdce2cee496759ebc82d/c0a5ea29-c020-437a-8fee-1bbdc514ebff/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6419cdce2cee496759ebc82d/c0a5ea29-c020-437a-8fee-1bbdc514ebff/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6419cdce2cee496759ebc82d/c0a5ea29-c020-437a-8fee-1bbdc514ebff/32"
+				},
+				"displayName": "Michael McGay",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-24T22:12:43.632+0000",
+			"items": [
+				{
+					"field": "Sprint",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10470",
+					"from": "7803, 7804",
+					"fromString": "PI30_PLA_SP 1, PI30_PLA_SP 2",
+					"to": "7803, 7804, 7805",
+					"toString": "PI30_PLA_SP 1, PI30_PLA_SP 2, PI30_PLA_SP 3"
+				}
+			]
+		},
+		{
+			"id": "8870990",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-25T14:11:11.161+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked higher"
+				}
+			]
+		},
+		{
+			"id": "8870997",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-25T14:11:27.926+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked lower"
+				}
+			]
+		},
+		{
+			"id": "8872782",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-25T17:46:37.513+0000",
+			"items": [
+				{
+					"field": "RemoteWorkItemLink",
+					"fieldtype": "jira",
+					"from": null,
+					"fromString": null,
+					"to": "90513",
+					"toString": "This work item links to \"Page (Confluence)\""
+				}
+			]
+		},
+		{
+			"id": "8885950",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-03-02T14:35:37.858+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked lower"
+				}
+			]
+		},
+		{
+			"id": "8891803",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-03-03T16:50:19.736+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked lower"
+				}
+			]
+		},
+		{
+			"id": "8896436",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-03-04T21:25:29.229+0000",
+			"items": [
+				{
+					"field": "status",
+					"fieldtype": "jira",
+					"fieldId": "status",
+					"from": "11100",
+					"fromString": "Code Review",
+					"to": "10301",
+					"toString": "Checked In"
+				}
+			]
+		},
+		{
+			"id": "8896844",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=60ba8c16a547eb0068745175",
+				"accountId": "60ba8c16a547eb0068745175",
+				"emailAddress": "rsaxena@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60ba8c16a547eb0068745175/67ee5e34-84b4-4288-8cc2-506d2a4447e2/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60ba8c16a547eb0068745175/67ee5e34-84b4-4288-8cc2-506d2a4447e2/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60ba8c16a547eb0068745175/67ee5e34-84b4-4288-8cc2-506d2a4447e2/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60ba8c16a547eb0068745175/67ee5e34-84b4-4288-8cc2-506d2a4447e2/32"
+				},
+				"displayName": "Rishabh Saxena",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-03-05T04:53:42.092+0000",
+			"items": [
+				{
+					"field": "assignee",
+					"fieldtype": "jira",
+					"fieldId": "assignee",
+					"from": "557058:8a67fb03-9325-4e4f-b148-87452163b023",
+					"fromString": "Michael Hohenshilt",
+					"to": "557058:18c9d590-53e6-458d-9f32-cc177b5c1484",
+					"toString": "Peter Jovellanos",
+					"tmpFromAccountId": "557058:8a67fb03-9325-4e4f-b148-87452163b023",
+					"tmpToAccountId": "557058:18c9d590-53e6-458d-9f32-cc177b5c1484"
+				}
+			]
+		},
+		{
+			"id": "8896845",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=60ba8c16a547eb0068745175",
+				"accountId": "60ba8c16a547eb0068745175",
+				"emailAddress": "rsaxena@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60ba8c16a547eb0068745175/67ee5e34-84b4-4288-8cc2-506d2a4447e2/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60ba8c16a547eb0068745175/67ee5e34-84b4-4288-8cc2-506d2a4447e2/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60ba8c16a547eb0068745175/67ee5e34-84b4-4288-8cc2-506d2a4447e2/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60ba8c16a547eb0068745175/67ee5e34-84b4-4288-8cc2-506d2a4447e2/32"
+				},
+				"displayName": "Rishabh Saxena",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-03-05T04:54:10.539+0000",
+			"items": [
+				{
+					"field": "Fix Version",
+					"fieldtype": "jira",
+					"fieldId": "fixVersions",
+					"from": null,
+					"fromString": null,
+					"to": "28829",
+					"toString": "PLA 26.03.02"
+				}
+			]
+		},
+		{
+			"id": "8896846",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=60ba8c16a547eb0068745175",
+				"accountId": "60ba8c16a547eb0068745175",
+				"emailAddress": "rsaxena@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60ba8c16a547eb0068745175/67ee5e34-84b4-4288-8cc2-506d2a4447e2/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60ba8c16a547eb0068745175/67ee5e34-84b4-4288-8cc2-506d2a4447e2/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60ba8c16a547eb0068745175/67ee5e34-84b4-4288-8cc2-506d2a4447e2/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60ba8c16a547eb0068745175/67ee5e34-84b4-4288-8cc2-506d2a4447e2/32"
+				},
+				"displayName": "Rishabh Saxena",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-03-05T04:54:13.003+0000",
+			"items": [
+				{
+					"field": "status",
+					"fieldtype": "jira",
+					"fieldId": "status",
+					"from": "10301",
+					"fromString": "Checked In",
+					"to": "10302",
+					"toString": "QA"
+				}
+			]
+		},
+		{
+			"id": "8898879",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-03-05T15:34:59.248+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked higher"
+				}
+			]
+		},
+		{
+			"id": "8899198",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=557058%3A18c9d590-53e6-458d-9f32-cc177b5c1484",
+				"accountId": "557058:18c9d590-53e6-458d-9f32-cc177b5c1484",
+				"emailAddress": "pjovellanos@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/32"
+				},
+				"displayName": "Peter Jovellanos",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-03-05T16:42:27.617+0000",
+			"items": [
+				{
+					"field": "Attachment",
+					"fieldtype": "jira",
+					"fieldId": "attachment",
+					"from": null,
+					"fromString": null,
+					"to": "677886",
+					"toString": "image-20260305-164208.png"
+				},
+				{
+					"field": "Attachment",
+					"fieldtype": "jira",
+					"fieldId": "attachment",
+					"from": null,
+					"fromString": null,
+					"to": "677883",
+					"toString": "image-20260305-164120.png"
+				},
+				{
+					"field": "Attachment",
+					"fieldtype": "jira",
+					"fieldId": "attachment",
+					"from": null,
+					"fromString": null,
+					"to": "677885",
+					"toString": "image-20260305-164104.png"
+				},
+				{
+					"field": "Attachment",
+					"fieldtype": "jira",
+					"fieldId": "attachment",
+					"from": null,
+					"fromString": null,
+					"to": "677884",
+					"toString": "image-20260305-164220.png"
+				}
+			]
+		},
+		{
+			"id": "8899634",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=557058%3A18c9d590-53e6-458d-9f32-cc177b5c1484",
+				"accountId": "557058:18c9d590-53e6-458d-9f32-cc177b5c1484",
+				"emailAddress": "pjovellanos@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/32"
+				},
+				"displayName": "Peter Jovellanos",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-03-05T17:52:11.428+0000",
+			"items": [
+				{
+					"field": "resolution",
+					"fieldtype": "jira",
+					"fieldId": "resolution",
+					"from": null,
+					"fromString": null,
+					"to": "10000",
+					"toString": "Done"
+				},
+				{
+					"field": "status",
+					"fieldtype": "jira",
+					"fieldId": "status",
+					"from": "10302",
+					"fromString": "QA",
+					"to": "10002",
+					"toString": "Done"
+				}
+			]
+		},
+		{
+			"id": "8900107",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-03-05T18:59:00.369+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked higher"
+				}
+			]
+		},
+		{
+			"id": "8915548",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=557058%3A18c9d590-53e6-458d-9f32-cc177b5c1484",
+				"accountId": "557058:18c9d590-53e6-458d-9f32-cc177b5c1484",
+				"emailAddress": "pjovellanos@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/32"
+				},
+				"displayName": "Peter Jovellanos",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-03-12T15:18:01.773+0000",
+			"items": [
+				{
+					"field": "RemoteWorkItemLink",
+					"fieldtype": "jira",
+					"from": null,
+					"fromString": null,
+					"to": "94597",
+					"toString": "This work item links to \"Page (Confluence)\""
+				}
+			]
+		},
+		{
+			"id": "8915634",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=557058%3A18c9d590-53e6-458d-9f32-cc177b5c1484",
+				"accountId": "557058:18c9d590-53e6-458d-9f32-cc177b5c1484",
+				"emailAddress": "pjovellanos@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/32"
+				},
+				"displayName": "Peter Jovellanos",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-03-12T15:39:24.532+0000",
+			"items": [
+				{
+					"field": "RemoteWorkItemLink",
+					"fieldtype": "jira",
+					"from": "94597",
+					"fromString": "This work item links to \"Page (Confluence)\"",
+					"to": null,
+					"toString": null
+				}
+			]
+		},
+		{
+			"id": "8929448",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=60ba8c16a547eb0068745175",
+				"accountId": "60ba8c16a547eb0068745175",
+				"emailAddress": "rsaxena@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60ba8c16a547eb0068745175/67ee5e34-84b4-4288-8cc2-506d2a4447e2/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60ba8c16a547eb0068745175/67ee5e34-84b4-4288-8cc2-506d2a4447e2/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60ba8c16a547eb0068745175/67ee5e34-84b4-4288-8cc2-506d2a4447e2/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/60ba8c16a547eb0068745175/67ee5e34-84b4-4288-8cc2-506d2a4447e2/32"
+				},
+				"displayName": "Rishabh Saxena",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-03-18T07:48:13.947+0000",
+			"items": [
+				{
+					"field": "RemoteWorkItemLink",
+					"fieldtype": "jira",
+					"from": null,
+					"fromString": null,
+					"to": "95890",
+					"toString": "This work item links to \"Page (Confluence)\""
+				}
+			]
+		}
+	]
+}

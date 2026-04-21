@@ -1,0 +1,107 @@
+{
+	"issues": [
+		{
+			"expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+			"id": "745428",
+			"self": "https://cadent.atlassian.net/rest/api/latest/issue/745428",
+			"key": "ADM-3881",
+			"fields": {
+				"summary": "FS: Line Item Details > Pacing (Imps) Enhancement",
+				"issuetype": {
+					"self": "https://cadent.atlassian.net/rest/api/2/issuetype/10",
+					"id": "10",
+					"description": "Created by Jira Software - do not edit or delete. Issue type for a user story.",
+					"iconUrl": "https://cadent.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10505?size=medium",
+					"name": "Story",
+					"subtask": false,
+					"avatarId": 10505,
+					"hierarchyLevel": 0
+				},
+				"parent": {
+					"id": "756571",
+					"key": "KPI-55650",
+					"self": "https://cadent.atlassian.net/rest/api/2/issue/756571",
+					"fields": {
+						"summary": "Fluidity - AdM Migration - Line Item Enhancements",
+						"status": {
+							"self": "https://cadent.atlassian.net/rest/api/2/status/11512",
+							"description": "",
+							"iconUrl": "https://cadent.atlassian.net/images/icons/statuses/generic.png",
+							"name": "In Progress - On Track",
+							"id": "11512",
+							"statusCategory": {
+								"self": "https://cadent.atlassian.net/rest/api/2/statuscategory/4",
+								"id": 4,
+								"key": "indeterminate",
+								"colorName": "yellow",
+								"name": "In Progress"
+							}
+						},
+						"priority": {
+							"self": "https://cadent.atlassian.net/rest/api/2/priority/3",
+							"iconUrl": "https://cadent.atlassian.net/images/icons/priorities/major_new.svg",
+							"name": "Major",
+							"id": "3"
+						},
+						"issuetype": {
+							"self": "https://cadent.atlassian.net/rest/api/2/issuetype/9",
+							"id": "9",
+							"description": "Created by Jira Software - do not edit or delete. Issue type for a big user story that needs to be broken down.",
+							"iconUrl": "https://cadent.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10497?size=medium",
+							"name": "Epic",
+							"subtask": false,
+							"avatarId": 10497,
+							"hierarchyLevel": 1
+						}
+					}
+				},
+				"resolutiondate": "2026-03-09T08:27:36.784+0000",
+				"customfield_10053": 2.0,
+				"customfield_11870": {
+					"id": "b4fe6acd-2481-492b-af61-cd06562c5ef1",
+					"name": "Ad Manager 1",
+					"avatarUrl": "",
+					"isVisible": true,
+					"isVerified": false,
+					"title": "Ad Manager 1",
+					"isShared": true
+				},
+				"assignee": {
+					"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=712020%3A67d220ab-7dd7-433e-bce6-bdcb1d62a8b4",
+					"accountId": "712020:67d220ab-7dd7-433e-bce6-bdcb1d62a8b4",
+					"emailAddress": "khuang@cadent.tv",
+					"avatarUrls": {
+						"48x48": "https://secure.gravatar.com/avatar/017cb9e1d70c1ec4248eb5ead55b8313?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKH-5.png",
+						"24x24": "https://secure.gravatar.com/avatar/017cb9e1d70c1ec4248eb5ead55b8313?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKH-5.png",
+						"16x16": "https://secure.gravatar.com/avatar/017cb9e1d70c1ec4248eb5ead55b8313?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKH-5.png",
+						"32x32": "https://secure.gravatar.com/avatar/017cb9e1d70c1ec4248eb5ead55b8313?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FKH-5.png"
+					},
+					"displayName": "Kristy Huang",
+					"active": true,
+					"timeZone": "Etc/UTC",
+					"accountType": "atlassian"
+				},
+				"customfield_11772": {
+					"self": "https://cadent.atlassian.net/rest/api/2/customFieldOption/16488",
+					"value": "30",
+					"id": "16488"
+				},
+				"status": {
+					"self": "https://cadent.atlassian.net/rest/api/2/status/10002",
+					"description": "",
+					"iconUrl": "https://cadent.atlassian.net/images/icons/subtask.gif",
+					"name": "Done",
+					"id": "10002",
+					"statusCategory": {
+						"self": "https://cadent.atlassian.net/rest/api/2/statuscategory/3",
+						"id": 3,
+						"key": "done",
+						"colorName": "green",
+						"name": "Done"
+					}
+				}
+			}
+		}
+	],
+	"isLast": true
+}

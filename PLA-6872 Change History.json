@@ -1,0 +1,1097 @@
+{
+	"self": "https://cadent.atlassian.net/rest/api/2/issue/PLA-6872/changelog?maxResults=100&startAt=0",
+	"maxResults": 100,
+	"startAt": 0,
+	"total": 36,
+	"isLast": true,
+	"values": [
+		{
+			"id": "8767042",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-01-23T14:07:59.808+0000",
+			"items": [
+				{
+					"field": "IssueParentAssociation",
+					"fieldtype": "jira",
+					"from": null,
+					"fromString": null,
+					"to": "393736",
+					"toString": "KPI-53706"
+				}
+			]
+		},
+		{
+			"id": "8769483",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=712020%3Afb9f17d6-9b23-4fd2-9390-423da31e32c5",
+				"accountId": "712020:fb9f17d6-9b23-4fd2-9390-423da31e32c5",
+				"emailAddress": "mpitkin@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/9a56bd6dd91c85cd2394c43929383d21?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMP-2.png",
+					"24x24": "https://secure.gravatar.com/avatar/9a56bd6dd91c85cd2394c43929383d21?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMP-2.png",
+					"16x16": "https://secure.gravatar.com/avatar/9a56bd6dd91c85cd2394c43929383d21?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMP-2.png",
+					"32x32": "https://secure.gravatar.com/avatar/9a56bd6dd91c85cd2394c43929383d21?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FMP-2.png"
+				},
+				"displayName": "Madeline Pitkin",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-01-23T17:47:41.819+0000",
+			"items": [
+				{
+					"field": "labels",
+					"fieldtype": "jira",
+					"fieldId": "labels",
+					"from": null,
+					"fromString": "",
+					"to": null,
+					"toString": "FE QA"
+				}
+			]
+		},
+		{
+			"id": "8774519",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-01-26T15:22:18.440+0000",
+			"items": [
+				{
+					"field": "Program Increment",
+					"fieldtype": "custom",
+					"fieldId": "customfield_11772",
+					"from": "16488",
+					"fromString": "30",
+					"to": "13434",
+					"toString": "TBD"
+				}
+			]
+		},
+		{
+			"id": "8848327",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=5b0f1f525c1b4f1bc453b95b",
+				"accountId": "5b0f1f525c1b4f1bc453b95b",
+				"emailAddress": "cjanssen@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c4fae5fa949111a7fff89dadc1b73bc6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCJ-1.png",
+					"24x24": "https://secure.gravatar.com/avatar/c4fae5fa949111a7fff89dadc1b73bc6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCJ-1.png",
+					"16x16": "https://secure.gravatar.com/avatar/c4fae5fa949111a7fff89dadc1b73bc6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCJ-1.png",
+					"32x32": "https://secure.gravatar.com/avatar/c4fae5fa949111a7fff89dadc1b73bc6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCJ-1.png"
+				},
+				"displayName": "Chris Janssen",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-14T00:24:01.352+0000",
+			"items": [
+				{
+					"field": "summary",
+					"fieldtype": "jira",
+					"fieldId": "summary",
+					"from": null,
+					"fromString": "CC: Filters are saved in session storage",
+					"to": null,
+					"toString": "CC: Filters are remembered for duration of session"
+				}
+			]
+		},
+		{
+			"id": "8848329",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=5b0f1f525c1b4f1bc453b95b",
+				"accountId": "5b0f1f525c1b4f1bc453b95b",
+				"emailAddress": "cjanssen@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c4fae5fa949111a7fff89dadc1b73bc6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCJ-1.png",
+					"24x24": "https://secure.gravatar.com/avatar/c4fae5fa949111a7fff89dadc1b73bc6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCJ-1.png",
+					"16x16": "https://secure.gravatar.com/avatar/c4fae5fa949111a7fff89dadc1b73bc6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCJ-1.png",
+					"32x32": "https://secure.gravatar.com/avatar/c4fae5fa949111a7fff89dadc1b73bc6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCJ-1.png"
+				},
+				"displayName": "Chris Janssen",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-14T00:28:42.386+0000",
+			"items": [
+				{
+					"field": "description",
+					"fieldtype": "jira",
+					"fieldId": "description",
+					"from": null,
+					"fromString": "Filters set on top of views should persist for a users session. Is cleared when they log out of the system.\n\nFE: 2\nQA: 1",
+					"to": null,
+					"toString": "Filters set on top of views should persist during the users session. Filters are not not persisted when the users session is timed out or the user explicitly logs out. When they log back in, filters will be back to the tables/views normal configuration\n\nQuick filters (the filter search bar) is not included in the above. This is because in general that is to quickly find a specific item, as opposed to filter down to a set of items.\n\nFE: 2\nQA: 1"
+				}
+			]
+		},
+		{
+			"id": "8848331",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=5b0f1f525c1b4f1bc453b95b",
+				"accountId": "5b0f1f525c1b4f1bc453b95b",
+				"emailAddress": "cjanssen@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c4fae5fa949111a7fff89dadc1b73bc6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCJ-1.png",
+					"24x24": "https://secure.gravatar.com/avatar/c4fae5fa949111a7fff89dadc1b73bc6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCJ-1.png",
+					"16x16": "https://secure.gravatar.com/avatar/c4fae5fa949111a7fff89dadc1b73bc6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCJ-1.png",
+					"32x32": "https://secure.gravatar.com/avatar/c4fae5fa949111a7fff89dadc1b73bc6?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FCJ-1.png"
+				},
+				"displayName": "Chris Janssen",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-14T00:34:26.923+0000",
+			"items": [
+				{
+					"field": "Acceptance Criteria",
+					"fieldtype": "custom",
+					"fieldId": "customfield_11273",
+					"from": "",
+					"fromString": "Filters are persisted within a session even if not saved in a view.",
+					"to": "",
+					"toString": "* The last state of the filters added to a table is remembered (persisted) as they navigate away and back to the table\n** This includes page navigation and page load/reload\n** Quick filter (filter search text bar) is not persisted across page navigation/load\n* Filter persistence is cleared if the users session times out OR the user explicitly logs out\n** Upon logging back in all tables will “revert” to their standard filters (if any) for the defined default view\n* Filters do not persist when a user changes views for the table (if supported). Meaning if I am on View 1 and I set a filter. I then change to View 2, the filters will now be based on View 2’s definition not the filters I used in View 1. If I switch back to View 1, I will now have the filters based on View 1, not the previously used filters I temporarily set in View 1 before switching to view 2."
+				}
+			]
+		},
+		{
+			"id": "8853059",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-18T14:14:58.163+0000",
+			"items": [
+				{
+					"field": "Sprint",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10470",
+					"from": "",
+					"fromString": "",
+					"to": "7804",
+					"toString": "PI30_PLA_SP 2"
+				}
+			]
+		},
+		{
+			"id": "8853060",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-18T14:15:09.122+0000",
+			"items": [
+				{
+					"field": "Program Increment",
+					"fieldtype": "custom",
+					"fieldId": "customfield_11772",
+					"from": "13434",
+					"fromString": "TBD",
+					"to": "16488",
+					"toString": "30"
+				}
+			]
+		},
+		{
+			"id": "8853061",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-18T14:15:12.014+0000",
+			"items": [
+				{
+					"field": "UX Review",
+					"fieldtype": "custom",
+					"fieldId": "customfield_13790",
+					"from": null,
+					"fromString": null,
+					"to": "14540",
+					"toString": "Required"
+				}
+			]
+		},
+		{
+			"id": "8853081",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-18T14:20:49.515+0000",
+			"items": [
+				{
+					"field": "description",
+					"fieldtype": "jira",
+					"fieldId": "description",
+					"from": null,
+					"fromString": "Filters set on top of views should persist during the users session. Filters are not not persisted when the users session is timed out or the user explicitly logs out. When they log back in, filters will be back to the tables/views normal configuration\n\nQuick filters (the filter search bar) is not included in the above. This is because in general that is to quickly find a specific item, as opposed to filter down to a set of items.\n\nFE: 2\nQA: 1",
+					"to": null,
+					"toString": "Filters set on top of views should persist during the users session. Filters are not not persisted when the users session is timed out or the user explicitly logs out. When they log back in, filters will be back to the tables/views normal configuration\n\nQuick filters (the filter search bar) is not included in the above. This is because in general that is to quickly find a specific item, as opposed to filter down to a set of items.\n\nRequirements: [https://cadent.atlassian.net/wiki/spaces/FUN/pages/25986695187/User+Table+Views+w+AG+Grid+PI29+30#3.2.-Table-View-Persistence|https://cadent.atlassian.net/wiki/spaces/FUN/pages/25986695187/User+Table+Views+w+AG+Grid+PI29+30#3.2.-Table-View-Persistence|smart-link] "
+				}
+			]
+		},
+		{
+			"id": "8853082",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-18T14:20:49.721+0000",
+			"items": [
+				{
+					"field": "RemoteWorkItemLink",
+					"fieldtype": "jira",
+					"from": null,
+					"fromString": null,
+					"to": "88851",
+					"toString": "This work item links to \"Wiki Page (System Confluence)\""
+				}
+			]
+		},
+		{
+			"id": "8853537",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-18T15:50:12.568+0000",
+			"items": [
+				{
+					"field": "Acceptance Criteria",
+					"fieldtype": "custom",
+					"fieldId": "customfield_11273",
+					"from": "",
+					"fromString": "* The last state of the filters added to a table is remembered (persisted) as they navigate away and back to the table\n** This includes page navigation and page load/reload\n** Quick filter (filter search text bar) is not persisted across page navigation/load\n* Filter persistence is cleared if the users session times out OR the user explicitly logs out\n** Upon logging back in all tables will “revert” to their standard filters (if any) for the defined default view\n* Filters do not persist when a user changes views for the table (if supported). Meaning if I am on View 1 and I set a filter. I then change to View 2, the filters will now be based on View 2’s definition not the filters I used in View 1. If I switch back to View 1, I will now have the filters based on View 1, not the previously used filters I temporarily set in View 1 before switching to view 2.",
+					"to": "",
+					"toString": "* The last state of the filters added to a table is remembered (persisted) as they navigate away and back to the table\n** This includes page navigation and page load/reload\n** Quick filter (filter search text bar) is not persisted across page navigation/load\n* Filter persistence is cleared if the users session times out OR the user explicitly logs out\n** Upon logging back in all tables will “revert” to their standard filters (if any) for the defined default view\n* Filters do not persist when a user changes views for the table (if supported). Meaning if I am on View 1 and I set a filter. I then change to View 2, the filters will now be based on View 2’s definition not the filters I used in View 1. If I switch back to View 1, I will now have the filters based on View 1, not the previously used filters I temporarily set in View 1 before switching to view 2.\n\nOther AC\n\n* AG Table remembers which view is selected when I navigate from the page and come back. The view returns to the default or the “favorite” view if a user logs out and back in.\n* We need to consider how these requirements will work when Custom Views are opted-in vs when only System Views are enabled and when neither are enabled."
+				}
+			]
+		},
+		{
+			"id": "8853544",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-18T15:51:00.339+0000",
+			"items": [
+				{
+					"field": "Acceptance Criteria",
+					"fieldtype": "custom",
+					"fieldId": "customfield_11273",
+					"from": "",
+					"fromString": "* The last state of the filters added to a table is remembered (persisted) as they navigate away and back to the table\n** This includes page navigation and page load/reload\n** Quick filter (filter search text bar) is not persisted across page navigation/load\n* Filter persistence is cleared if the users session times out OR the user explicitly logs out\n** Upon logging back in all tables will “revert” to their standard filters (if any) for the defined default view\n* Filters do not persist when a user changes views for the table (if supported). Meaning if I am on View 1 and I set a filter. I then change to View 2, the filters will now be based on View 2’s definition not the filters I used in View 1. If I switch back to View 1, I will now have the filters based on View 1, not the previously used filters I temporarily set in View 1 before switching to view 2.\n\nOther AC\n\n* AG Table remembers which view is selected when I navigate from the page and come back. The view returns to the default or the “favorite” view if a user logs out and back in.\n* We need to consider how these requirements will work when Custom Views are opted-in vs when only System Views are enabled and when neither are enabled.",
+					"to": "",
+					"toString": "* The last state of the filters added to a table is remembered (persisted) as they navigate away and back to the table\n** This includes page navigation and page load/reload\n** Quick filter (filter search text bar) is not persisted across page navigation/load\n* Filter persistence is cleared if the users session times out OR the user explicitly logs out\n** Upon logging back in all tables will “revert” to their standard filters (if any) for the defined default view\n* Filters do not persist when a user changes views for the table (if supported). Meaning if I am on View 1 and I set a filter. I then change to View 2, the filters will now be based on View 2’s definition not the filters I used in View 1. If I switch back to View 1, I will now have the filters based on View 1, not the previously used filters I temporarily set in View 1 before switching to view 2.\n\nOther AC - [~accountid:609d89ab9da6d500704daf78] please review and determine if additional stories are need for the below scenarios.\n\n* AG Table remembers which view is selected when I navigate from the page and come back. The view returns to the default or the “favorite” view if a user logs out and back in.\n* We need to consider how these requirements will work when Custom Views are opted-in vs when only System Views are enabled and when neither are enabled."
+				}
+			]
+		},
+		{
+			"id": "8854748",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=60c8b6af758a5d006accb43c",
+				"accountId": "60c8b6af758a5d006accb43c",
+				"emailAddress": "jle@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png"
+				},
+				"displayName": "Jonathan Le",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-18T20:12:38.473+0000",
+			"items": [
+				{
+					"field": "assignee",
+					"fieldtype": "jira",
+					"fieldId": "assignee",
+					"from": null,
+					"fromString": null,
+					"to": "60c8b6af758a5d006accb43c",
+					"toString": "Jonathan Le",
+					"tmpFromAccountId": null,
+					"tmpToAccountId": "60c8b6af758a5d006accb43c"
+				}
+			]
+		},
+		{
+			"id": "8856702",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=60c8b6af758a5d006accb43c",
+				"accountId": "60c8b6af758a5d006accb43c",
+				"emailAddress": "jle@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png"
+				},
+				"displayName": "Jonathan Le",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-19T16:37:33.940+0000",
+			"items": [
+				{
+					"field": "status",
+					"fieldtype": "jira",
+					"fieldId": "status",
+					"from": "11300",
+					"fromString": "Not Started - On Track",
+					"to": "11301",
+					"toString": "Development"
+				}
+			]
+		},
+		{
+			"id": "8856704",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=60c8b6af758a5d006accb43c",
+				"accountId": "60c8b6af758a5d006accb43c",
+				"emailAddress": "jle@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png"
+				},
+				"displayName": "Jonathan Le",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-19T16:37:40.166+0000",
+			"items": [
+				{
+					"field": "FE Pts",
+					"fieldtype": "custom",
+					"fieldId": "customfield_12599",
+					"from": null,
+					"fromString": "2",
+					"to": null,
+					"toString": "3"
+				}
+			]
+		},
+		{
+			"id": "8862921",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-23T14:38:15.314+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked higher"
+				}
+			]
+		},
+		{
+			"id": "8864111",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=60c8b6af758a5d006accb43c",
+				"accountId": "60c8b6af758a5d006accb43c",
+				"emailAddress": "jle@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png"
+				},
+				"displayName": "Jonathan Le",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-23T18:51:39.721+0000",
+			"items": [
+				{
+					"field": "Link",
+					"fieldtype": "jira",
+					"from": null,
+					"fromString": null,
+					"to": "PLA-6998",
+					"toString": "This work item is cloned by PLA-6998"
+				}
+			]
+		},
+		{
+			"id": "8864141",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=60c8b6af758a5d006accb43c",
+				"accountId": "60c8b6af758a5d006accb43c",
+				"emailAddress": "jle@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png"
+				},
+				"displayName": "Jonathan Le",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-23T19:00:44.704+0000",
+			"items": [
+				{
+					"field": "summary",
+					"fieldtype": "jira",
+					"fieldId": "summary",
+					"from": null,
+					"fromString": "CC: Filters are remembered for duration of session",
+					"to": null,
+					"toString": "CC: Last Selected View persisting"
+				}
+			]
+		},
+		{
+			"id": "8864142",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=60c8b6af758a5d006accb43c",
+				"accountId": "60c8b6af758a5d006accb43c",
+				"emailAddress": "jle@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png"
+				},
+				"displayName": "Jonathan Le",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-23T19:00:51.188+0000",
+			"items": [
+				{
+					"field": "summary",
+					"fieldtype": "jira",
+					"fieldId": "summary",
+					"from": null,
+					"fromString": "CC: Last Selected View persisting",
+					"to": null,
+					"toString": "CC: Last Selected View Persistence"
+				}
+			]
+		},
+		{
+			"id": "8864148",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=60c8b6af758a5d006accb43c",
+				"accountId": "60c8b6af758a5d006accb43c",
+				"emailAddress": "jle@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png"
+				},
+				"displayName": "Jonathan Le",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-23T19:01:12.256+0000",
+			"items": [
+				{
+					"field": "description",
+					"fieldtype": "jira",
+					"fieldId": "description",
+					"from": null,
+					"fromString": "Filters set on top of views should persist during the users session. Filters are not not persisted when the users session is timed out or the user explicitly logs out. When they log back in, filters will be back to the tables/views normal configuration\n\nQuick filters (the filter search bar) is not included in the above. This is because in general that is to quickly find a specific item, as opposed to filter down to a set of items.\n\nRequirements: [https://cadent.atlassian.net/wiki/spaces/FUN/pages/25986695187/User+Table+Views+w+AG+Grid+PI29+30#3.2.-Table-View-Persistence|https://cadent.atlassian.net/wiki/spaces/FUN/pages/25986695187/User+Table+Views+w+AG+Grid+PI29+30#3.2.-Table-View-Persistence|smart-link] ",
+					"to": null,
+					"toString": "Within a session, the last selected view of a user is maintained for a session.\n\n* Example: On the campaigns page, the default view is View A. User switches to view B. In the same session, user navigates to the Audience page. Then the user navigates back to the campaigns page. View B should be active on page load.\n\nRequirements: [https://cadent.atlassian.net/wiki/spaces/FUN/pages/25986695187/User+Table+Views+w+AG+Grid+PI29+30#3.2.-Table-View-Persistence|https://cadent.atlassian.net/wiki/spaces/FUN/pages/25986695187/User+Table+Views+w+AG+Grid+PI29+30#3.2.-Table-View-Persistence|smart-link] "
+				}
+			]
+		},
+		{
+			"id": "8864150",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=60c8b6af758a5d006accb43c",
+				"accountId": "60c8b6af758a5d006accb43c",
+				"emailAddress": "jle@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png"
+				},
+				"displayName": "Jonathan Le",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-23T19:01:22.162+0000",
+			"items": [
+				{
+					"field": "Acceptance Criteria",
+					"fieldtype": "custom",
+					"fieldId": "customfield_11273",
+					"from": "",
+					"fromString": "* The last state of the filters added to a table is remembered (persisted) as they navigate away and back to the table\n** This includes page navigation and page load/reload\n** Quick filter (filter search text bar) is not persisted across page navigation/load\n* Filter persistence is cleared if the users session times out OR the user explicitly logs out\n** Upon logging back in all tables will “revert” to their standard filters (if any) for the defined default view\n* Filters do not persist when a user changes views for the table (if supported). Meaning if I am on View 1 and I set a filter. I then change to View 2, the filters will now be based on View 2’s definition not the filters I used in View 1. If I switch back to View 1, I will now have the filters based on View 1, not the previously used filters I temporarily set in View 1 before switching to view 2.\n\nOther AC - [~accountid:609d89ab9da6d500704daf78] please review and determine if additional stories are need for the below scenarios.\n\n* AG Table remembers which view is selected when I navigate from the page and come back. The view returns to the default or the “favorite” view if a user logs out and back in.\n* We need to consider how these requirements will work when Custom Views are opted-in vs when only System Views are enabled and when neither are enabled.",
+					"to": "",
+					"toString": "Within a session, the last selected view of a user is maintained for a session."
+				}
+			]
+		},
+		{
+			"id": "8864171",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=60c8b6af758a5d006accb43c",
+				"accountId": "60c8b6af758a5d006accb43c",
+				"emailAddress": "jle@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png"
+				},
+				"displayName": "Jonathan Le",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-23T19:11:06.629+0000",
+			"items": [
+				{
+					"field": "description",
+					"fieldtype": "jira",
+					"fieldId": "description",
+					"from": null,
+					"fromString": "Within a session, the last selected view of a user is maintained for a session.\n\n* Example: On the campaigns page, the default view is View A. User switches to view B. In the same session, user navigates to the Audience page. Then the user navigates back to the campaigns page. View B should be active on page load.\n\nRequirements: [https://cadent.atlassian.net/wiki/spaces/FUN/pages/25986695187/User+Table+Views+w+AG+Grid+PI29+30#3.2.-Table-View-Persistence|https://cadent.atlassian.net/wiki/spaces/FUN/pages/25986695187/User+Table+Views+w+AG+Grid+PI29+30#3.2.-Table-View-Persistence|smart-link] ",
+					"to": null,
+					"toString": "Within a session, the last selected view of a user is maintained for a session.\n\n* Example: On the campaigns page, the default view is View A. User switches to view B. In the same session, user navigates to the Audience page. Then the user navigates back to the campaigns page. View B should be active on page load.\n\nRequirements: [https://cadent.atlassian.net/wiki/spaces/FUN/pages/25986695187/User+Table+Views+w+AG+Grid+PI29+30#3.2.-Table-View-Persistence|https://cadent.atlassian.net/wiki/spaces/FUN/pages/25986695187/User+Table+Views+w+AG+Grid+PI29+30#3.2.-Table-View-Persistence|smart-link] \n\nNote - the second half of persistence with the favoriting feature will be a part of [https://cadent.atlassian.net/browse/PLA-6633|https://cadent.atlassian.net/browse/PLA-6633|smart-link] "
+				}
+			]
+		},
+		{
+			"id": "8869403",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=6419cdce2cee496759ebc82d",
+				"accountId": "6419cdce2cee496759ebc82d",
+				"emailAddress": "mmcgay@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6419cdce2cee496759ebc82d/c0a5ea29-c020-437a-8fee-1bbdc514ebff/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6419cdce2cee496759ebc82d/c0a5ea29-c020-437a-8fee-1bbdc514ebff/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6419cdce2cee496759ebc82d/c0a5ea29-c020-437a-8fee-1bbdc514ebff/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/6419cdce2cee496759ebc82d/c0a5ea29-c020-437a-8fee-1bbdc514ebff/32"
+				},
+				"displayName": "Michael McGay",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-24T22:12:43.970+0000",
+			"items": [
+				{
+					"field": "Sprint",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10470",
+					"from": "7804",
+					"fromString": "PI30_PLA_SP 2",
+					"to": "7804, 7805",
+					"toString": "PI30_PLA_SP 2, PI30_PLA_SP 3"
+				}
+			]
+		},
+		{
+			"id": "8871007",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-25T14:11:31.483+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked higher"
+				}
+			]
+		},
+		{
+			"id": "8871021",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-25T14:12:11.171+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked higher"
+				}
+			]
+		},
+		{
+			"id": "8873841",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=60c8b6af758a5d006accb43c",
+				"accountId": "60c8b6af758a5d006accb43c",
+				"emailAddress": "jle@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png"
+				},
+				"displayName": "Jonathan Le",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-25T20:35:50.483+0000",
+			"items": [
+				{
+					"field": "status",
+					"fieldtype": "jira",
+					"fieldId": "status",
+					"from": "11301",
+					"fromString": "Development",
+					"to": "11100",
+					"toString": "Code Review"
+				}
+			]
+		},
+		{
+			"id": "8877569",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=60c8b6af758a5d006accb43c",
+				"accountId": "60c8b6af758a5d006accb43c",
+				"emailAddress": "jle@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/217dabb05c680893558164110684cee9?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJL-0.png"
+				},
+				"displayName": "Jonathan Le",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-26T21:00:23.684+0000",
+			"items": [
+				{
+					"field": "status",
+					"fieldtype": "jira",
+					"fieldId": "status",
+					"from": "11100",
+					"fromString": "Code Review",
+					"to": "10301",
+					"toString": "Checked In"
+				}
+			]
+		},
+		{
+			"id": "8878730",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=557058%3A18c9d590-53e6-458d-9f32-cc177b5c1484",
+				"accountId": "557058:18c9d590-53e6-458d-9f32-cc177b5c1484",
+				"emailAddress": "pjovellanos@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/32"
+				},
+				"displayName": "Peter Jovellanos",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-27T13:10:05.570+0000",
+			"items": [
+				{
+					"field": "Fix Version",
+					"fieldtype": "jira",
+					"fieldId": "fixVersions",
+					"from": null,
+					"fromString": null,
+					"to": "28829",
+					"toString": "PLA 26.03.02"
+				}
+			]
+		},
+		{
+			"id": "8878731",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=557058%3A18c9d590-53e6-458d-9f32-cc177b5c1484",
+				"accountId": "557058:18c9d590-53e6-458d-9f32-cc177b5c1484",
+				"emailAddress": "pjovellanos@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/557058:18c9d590-53e6-458d-9f32-cc177b5c1484/c3f33e5e-c879-4ee3-824f-ba5d0b67f9ca/32"
+				},
+				"displayName": "Peter Jovellanos",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-27T13:10:07.602+0000",
+			"items": [
+				{
+					"field": "status",
+					"fieldtype": "jira",
+					"fieldId": "status",
+					"from": "10301",
+					"fromString": "Checked In",
+					"to": "10302",
+					"toString": "QA"
+				}
+			]
+		},
+		{
+			"id": "8879088",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=712020%3Aff2d6b9f-cb30-4a75-8706-11593cc9a6c6",
+				"accountId": "712020:ff2d6b9f-cb30-4a75-8706-11593cc9a6c6",
+				"emailAddress": "aschussler@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ff2d6b9f-cb30-4a75-8706-11593cc9a6c6/66487151-3603-423d-9380-bf50bb10c4c8/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ff2d6b9f-cb30-4a75-8706-11593cc9a6c6/66487151-3603-423d-9380-bf50bb10c4c8/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ff2d6b9f-cb30-4a75-8706-11593cc9a6c6/66487151-3603-423d-9380-bf50bb10c4c8/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/712020:ff2d6b9f-cb30-4a75-8706-11593cc9a6c6/66487151-3603-423d-9380-bf50bb10c4c8/32"
+				},
+				"displayName": "Arielle Schussler",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-27T14:49:01.459+0000",
+			"items": [
+				{
+					"field": "UX Review",
+					"fieldtype": "custom",
+					"fieldId": "customfield_13790",
+					"from": "14540",
+					"fromString": "Required",
+					"to": "14574",
+					"toString": "Assigned"
+				}
+			]
+		},
+		{
+			"id": "8879710",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-02-27T16:19:45.811+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked higher"
+				}
+			]
+		},
+		{
+			"id": "8888091",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=609d89b79b362f0069946b0f",
+				"accountId": "609d89b79b362f0069946b0f",
+				"emailAddress": "schiligireddy@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/817efae3f13c7a154009aa3685fbf2e8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSC-1.png",
+					"24x24": "https://secure.gravatar.com/avatar/817efae3f13c7a154009aa3685fbf2e8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSC-1.png",
+					"16x16": "https://secure.gravatar.com/avatar/817efae3f13c7a154009aa3685fbf2e8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSC-1.png",
+					"32x32": "https://secure.gravatar.com/avatar/817efae3f13c7a154009aa3685fbf2e8?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FSC-1.png"
+				},
+				"displayName": "Santhoshi Chiligireddy",
+				"active": true,
+				"timeZone": "Etc/UTC",
+				"accountType": "atlassian"
+			},
+			"created": "2026-03-02T18:09:10.625+0000",
+			"items": [
+				{
+					"field": "status",
+					"fieldtype": "jira",
+					"fieldId": "status",
+					"from": "10302",
+					"fromString": "QA",
+					"to": "11203",
+					"toString": "Product Acceptance"
+				}
+			]
+		},
+		{
+			"id": "8888336",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-03-02T18:39:57.281+0000",
+			"items": [
+				{
+					"field": "Rank",
+					"fieldtype": "custom",
+					"fieldId": "customfield_10570",
+					"from": "",
+					"fromString": "",
+					"to": "",
+					"toString": "Ranked higher"
+				}
+			]
+		},
+		{
+			"id": "8891348",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=70121%3A0a09e9d1-f336-45a0-b6a3-21bf3f19c078",
+				"accountId": "70121:0a09e9d1-f336-45a0-b6a3-21bf3f19c078",
+				"emailAddress": "phenle@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:0a09e9d1-f336-45a0-b6a3-21bf3f19c078/c6793407-a425-47b4-839d-228f251b53a0/48",
+					"24x24": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:0a09e9d1-f336-45a0-b6a3-21bf3f19c078/c6793407-a425-47b4-839d-228f251b53a0/24",
+					"16x16": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:0a09e9d1-f336-45a0-b6a3-21bf3f19c078/c6793407-a425-47b4-839d-228f251b53a0/16",
+					"32x32": "https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/70121:0a09e9d1-f336-45a0-b6a3-21bf3f19c078/c6793407-a425-47b4-839d-228f251b53a0/32"
+				},
+				"displayName": "Paul Henle",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-03-03T15:47:23.483+0000",
+			"items": [
+				{
+					"field": "UX Review",
+					"fieldtype": "custom",
+					"fieldId": "customfield_13790",
+					"from": "14574",
+					"fromString": "Assigned",
+					"to": "14538",
+					"toString": "Complete"
+				}
+			]
+		},
+		{
+			"id": "8891350",
+			"author": {
+				"self": "https://cadent.atlassian.net/rest/api/2/user?accountId=62685b4de2f47a00682dfc50",
+				"accountId": "62685b4de2f47a00682dfc50",
+				"emailAddress": "idibruno@cadent.tv",
+				"avatarUrls": {
+					"48x48": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"24x24": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"16x16": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png",
+					"32x32": "https://secure.gravatar.com/avatar/c50ea6317e3c1dc1f89c4b7d07ef5eeb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FID-0.png"
+				},
+				"displayName": "Ian DiBruno",
+				"active": true,
+				"timeZone": "America/New_York",
+				"accountType": "atlassian"
+			},
+			"created": "2026-03-03T15:47:45.268+0000",
+			"items": [
+				{
+					"field": "resolution",
+					"fieldtype": "jira",
+					"fieldId": "resolution",
+					"from": null,
+					"fromString": null,
+					"to": "10000",
+					"toString": "Done"
+				},
+				{
+					"field": "status",
+					"fieldtype": "jira",
+					"fieldId": "status",
+					"from": "11203",
+					"fromString": "Product Acceptance",
+					"to": "10002",
+					"toString": "Done"
+				}
+			]
+		}
+	]
+}
