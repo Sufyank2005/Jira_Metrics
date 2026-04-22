@@ -150,7 +150,7 @@ class JiraTimeInStatusProject:
                     print(f" • {t:<25}: {self.format_duration(hours)}")
             print("\n" + "="*45)
 
-    def export_to_csv(self, filename_prefix="jira_time_in_status"):
+    def export_to_csv(self, filename_prefix="TIS_CT"):
         """Export results into a CSV file with raw hours first, then formatted columns."""
         # Define the statuses in the order you want them as columns
         statuses = ["Development", "Code Review", "Checked In", "QA", "Product Acceptance", "Blocked"]

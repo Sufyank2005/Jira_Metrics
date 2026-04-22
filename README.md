@@ -15,9 +15,10 @@ Together, these scripts provide robust, automated insights into sprint performan
 - Python 3.9+
 - Libraries:
   - `jira` (Atlassian Python API, install via `pip install jira`)
-  - `csv` (Python standard library, no install needed)
-  - `datetime` (Python standard library, no install needed)
+  - `csv` (Python standard library)
+  - `datetime` (Python standard library)
   - `collections` (Python standard library, used for `defaultdict`)
+  - `math` (Python standard library)
 - Jira Cloud API access
 - Valid Jira API token and email
 
@@ -36,9 +37,17 @@ Or use environment variables / .env file for secure storage.
 
 📂 Scripts
 1. JiraDailyWIPProject (WIP.py)
-Purpose: Tracks how long each issue spends in workflow statuses (Development, QA, etc.) on a daily basis.
+Purpose: Tracks how many issues are in each workflow status (Development, QA, etc.) on a daily basis.
+Logic: Pre-populates daily counts with zeros, then processes issue changelogs to build daily status counts.
+Output:
 
-Output: CSV file with daily counts per category (Stories, Bugs, Story Bugs, Overall) plus averages.
+CSV file with daily counts per category (Stories, Bugs, Story Bugs, Overall).
+
+Includes an “Average WIP” row summarizing averages per status.
+
+Filename format: WIP_<TeamName><MMDDYYYY>.csv.
+
+First row contains the team name.
 
 Usage:
 
@@ -46,21 +55,26 @@ bash
 python WIP.py
 Sample Output (CSV):
 
-TeamName
+Code
+Sell Side Core
 Stories
 Date,Development,Code Review,Checked In,QA,Product Acceptance,Blocked
 2026-02-01,2,1,0,3,0,0
 Average WIP,1.5,0.8,0.2,2.1,0.4,0.0
 2. JiraMetricsProject (Throughput.py)
-Purpose: Collects sprint-level throughput metrics:
+Purpose: Collects sprint-level throughput metrics (Stories, Bugs, Story Bugs).
+Logic:
 
-Stories completed
+Generates sprint boundaries from a start date.
 
-Bugs completed
+Pre-populates only elapsed sprints (end date ≤ today) with zero counts.
 
-Story Bugs completed
+Future sprints are excluded from CSV and console output.
+Output:
 
-Output: CSV ordered from first sprint to last, grouped by team.
+CSV ordered from first sprint to last, grouped by team.
+
+Filename format: Throughput_<TeamName><MMDDYYYY>.csv.
 
 Usage:
 
@@ -68,30 +82,33 @@ bash
 python Throughput.py
 Adjusting Sprint Dates and Number of Sprints:
 
-In the execution block, you’ll see:
-
 python
 sprint_start = datetime(2026, 1, 28, tzinfo=datetime.now().astimezone().tzinfo)
 project.calculate_throughput(sprint_start, num_sprints=6)
 Change sprint_start to the actual start date of your first sprint.
-
 Change num_sprints to match the number of sprints you want to analyze.
 
-Example: To start on March 1, 2026 and analyze 6 sprints:
-
-python
-sprint_start = datetime(2026, 3, 1, tzinfo=datetime.now().astimezone().tzinfo)
-project.calculate_throughput(sprint_start, num_sprints=6)
 Sample Output (CSV):
 
+Code
 Type,Sprint,Team,Tickets Completed
 Stories,Sprint 1,Sell Side Core,15
 Bugs,Sprint 1,Sell Side Core,3
 Story Bugs,Sprint 1,Sell Side Core,2
 3. JiraTimeInStatusProject (TIS_CT.py)
 Purpose: Calculates time spent in each workflow status and overall cycle time per ticket.
+Logic:
 
-Output: CSV file with raw decimal hours first, followed by formatted durations (- Formatted columns).
+Excludes weekends by calculating only business days.
+
+Rounds raw hours up to whole numbers in CSV.
+
+Provides both raw hours and formatted durations.
+Output:
+
+CSV file with raw decimal hours first, followed by formatted durations (- Formatted columns).
+
+Filename format: TIS_CT<MMDDYYYY>.csv (default prefix TIS_CT).
 
 Usage:
 
@@ -100,13 +117,11 @@ python TIS_CT.py
 Sample Output (CSV):
 
 Code
-Ticket,Team,Development,Code Review,Checked In,QA,Product Acceptance,Blocked,Cycle Time,Development - Formatted,Code Review - Formatted,Checked In - Formatted,QA - Formatted,Product Acceptance - Formatted,Blocked - Formatted,Cycle Time - Formatted
-SELL-1234,Sell Side Core,25.0,10.0,34.0,124.0,12.0,0.0,195.0,1d 1h,0d 10h,1d 10h,5d 4h,0d 12h,0m,8d 3h
-
-
+Ticket,Type,Team,Development,Code Review,Checked In,QA,Product Acceptance,Blocked,Cycle Time,Development - Formatted,Code Review - Formatted,Checked In - Formatted,QA - Formatted,Product Acceptance - Formatted,Blocked - Formatted,Cycle Time - Formatted
+SELL-1234,Story,Sell Side Core,25,10,34,124,12,0,195,1d 1h,10h,1d 10h,5d 4h,12h,0m,8d 3h
 ▶️ Usage Notes
 Update the JQL queries in each script to match your team/project filters.
 
-CSV files are automatically named based on team name (e.g., WIP_TeamName.csv, Throughput_TeamName.csv).
+CSV files are automatically named based on team name and date.
 
 Reports are printed to console and exported to CSV for stakeholder use.

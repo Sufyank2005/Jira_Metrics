@@ -53,6 +53,16 @@ class JiraMetricsProject:
         issues = self.data_store.get('issues', [])
         sprints = generate_sprints(sprint_start, num_sprints)
 
+        now = datetime.now().astimezone()
+
+        # Pre-populate only elapsed sprints (end date <= now)
+        for category in ["Stories", "Bugs", "Story Bugs"]:
+            for idx, (start, end) in enumerate(sprints, 1):
+                if end <= now:
+                    sprint_key = f"Sprint {idx}"
+                    if sprint_key not in self.results[category]["Throughput"]:
+                        self.results[category]["Throughput"][sprint_key] = {}
+
         for issue in issues:
             fields = issue.get('fields', {})
             team = fields.get('customfield_11870', {}).get('name', 'Unknown Team')
@@ -66,16 +76,13 @@ class JiraMetricsProject:
             else:
                 category = "Story Bugs"
 
-            # Only team name, no issue type label
             group_key = team
 
             if res_date:
                 res_dt = datetime.strptime(res_date, "%Y-%m-%dT%H:%M:%S.%f%z")
                 for idx, (start, end) in enumerate(sprints, 1):
-                    if start <= res_dt < end:
+                    if start <= res_dt < end and end <= now:
                         sprint_key = f"Sprint {idx}"
-                        if sprint_key not in self.results[category]["Throughput"]:
-                            self.results[category]["Throughput"][sprint_key] = {}
                         self.results[category]["Throughput"][sprint_key][group_key] = \
                             self.results[category]["Throughput"][sprint_key].get(group_key, 0) + 1
                         break
@@ -94,14 +101,16 @@ class JiraMetricsProject:
                                      key=lambda x: int(x.split()[1])):
                     groups = self.results[category]["Throughput"][sprint]
                     print(f"\n{sprint}:")
-                    for group, count in groups.items():
-                        print(f" • {group:<35}: {count} ticket(s) completed")
+                    if groups:
+                        for group, count in groups.items():
+                            print(f" • {group:<35}: {count} ticket(s) completed")
+                    else:
+                        print(" • No tickets completed")
 
         print("\n" + "="*45)
 
     def export_to_csv(self, filename=None):
         """Export metrics results into a CSV file named after the team, ordered by sprint and category."""
-        # Try to detect the first team name from results
         team_name = None
         for category in ["Stories", "Bugs", "Story Bugs"]:
             metrics = self.results.get(category, {})
@@ -127,20 +136,17 @@ class JiraMetricsProject:
             writer = csv.writer(file)
             writer.writerow(["Type", "Sprint", "Team", "Tickets Completed"])
 
-            # Ensure categories are written in the same order as display_report
             for category in ["Stories", "Bugs", "Story Bugs"]:
-                metrics = self.results.get(category, {})
-                throughput = metrics.get("Throughput", {})
-                # Sort sprints numerically (Sprint 1, Sprint 2, …)
+                throughput = self.results[category]["Throughput"]
                 for sprint in sorted(throughput.keys(), key=lambda x: int(x.split()[1])):
                     groups = throughput[sprint]
-                    for group, count in groups.items():
-                        writer.writerow([category, sprint, group, count])
+                    if groups:
+                        for group, count in groups.items():
+                            writer.writerow([category, sprint, group, count])
+                    else:
+                        writer.writerow([category, sprint, team_name, 0])
 
         print(f"CSV export complete: {filename}")
-
-
-
 
 
 # --- EXECUTION ---
@@ -154,13 +160,13 @@ project = JiraMetricsProject(jira_url=jira_url, email=email, api_token=api_token
 jql_query = '''
 type in (story, bug, "Story Bug") 
 and "Program Increment[Dropdown]" =30 
-and "Team[Team]"= is not empty
+and "Team[Team]" = ab077377-6409-47c9-92d4-b4755a39b363-70
 and project != "Google Cloud Migration" 
 and status = Done
 '''
 project.load_jql_query(jql_query)
 
-sprint_start = datetime(2026, 1, 28, tzinfo=datetime.now().astimezone().tzinfo)
+sprint_start = datetime(2026, 4, 1, tzinfo=datetime.now().astimezone().tzinfo)
 
 project.calculate_throughput(sprint_start, num_sprints=6)
 project.display_report()
