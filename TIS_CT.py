@@ -191,6 +191,7 @@ class JiraTimeInStatusProject:
                 row.append(cycle_time_fmt)
 
                 writer.writerow(row)
+        return filename
 
         print(f"Results exported to {filename}")
 
