@@ -1,0 +1,102 @@
+Ticket,Type,Team,Development,Code Review,Checked In,QA,Product Acceptance,Blocked,Cycle Time,Development - Formatted,Code Review - Formatted,Checked In - Formatted,QA - Formatted,Product Acceptance - Formatted,Blocked - Formatted,Cycle Time - Formatted
+PLA-7121,Bug,Platform Admin,0,0,0,0,0,0,0,0m,0m,0m,0m,0m,0m,0m
+PLA-7120,Story Bug,Platform Admin,7,0,1,19,0,0,26,6h 48m,0m,6m,18h 34m,0m,0m,1d 1h 28m
+PLA-7116,Story,Platform Admin,0,0,0,0,1,0,0,0m,0m,0m,0m,3m,0m,0m
+PLA-7115,Story,Platform Admin,47,0,0,0,0,0,47,1d 22h 55m,0m,0m,0m,0m,0m,1d 22h 55m
+PLA-7111,Story,Platform Admin,0,0,0,0,0,0,0,0m,0m,0m,0m,0m,0m,0m
+PLA-7095,Story,Platform Admin,52,0,0,24,22,0,97,2d 3h 42m,0m,0m,23h 14m,21h 36m,0m,4d 32m
+PLA-7091,Story Bug,Platform Admin,94,29,19,23,0,0,164,3d 21h 53m,1d 4h 15m,18h 48m,22h 48m,0m,0m,6d 19h 43m
+PLA-7090,Story,Platform Admin,120,0,0,0,0,0,120,4d 23h 28m,0m,0m,0m,0m,0m,4d 23h 28m
+PLA-7082,Story Bug,Platform Admin,6,43,95,23,0,0,166,5h 38m,1d 18h 29m,3d 22h 55m,23h,0m,0m,6d 22h
+PLA-7077,Story,Platform Admin,26,0,5,19,73,0,121,1d 1h 8m,0m,4h 37m,18h 2m,3d 35m,0m,5d 20m
+PLA-7074,Story Bug,Platform Admin,3,3,1,1,0,0,7,2h 26m,2h 54m,13m,53m,0m,0m,6h 24m
+PLA-7072,Story,Platform Admin,1,29,19,23,99,0,169,22m,1d 4h 48m,18h 3m,22h 33m,4d 2h 26m,0m,7d 10m
+PLA-7071,Story,Platform Admin,0,0,0,0,1,0,0,0m,0m,0m,0m,2m,0m,0m
+PLA-7069,Story,Platform Admin,44,0,0,0,0,0,44,1d 19h 30m,0m,0m,0m,0m,0m,1d 19h 30m
+PLA-7052,Story,Platform Admin,0,8,18,54,67,0,0,0m,7h 48m,17h 35m,2d 5h 37m,2d 18h 50m,0m,0m
+PLA-7051,Story,Platform Admin,21,0,0,0,0,0,21,20h 56m,0m,0m,0m,0m,0m,20h 56m
+PLA-7050,Story,Platform Admin,0,4,0,0,0,0,0,0m,3h 27m,0m,0m,0m,0m,0m
+PLA-7049,Story,Platform Admin,0,0,0,3,0,0,0,0m,0m,0m,2h 46m,0m,0m,0m
+PLA-7048,Story,Platform Admin,54,0,0,0,0,0,54,2d 5h 40m,0m,0m,0m,0m,0m,2d 5h 40m
+PLA-7045,Story,Platform Admin,52,0,1,0,21,0,23,2d 3h 4m,0m,37m,0m,21h,0m,22h 39m
+PLA-7044,Story,Platform Admin,25,0,0,0,1,0,25,1d 15m,0m,0m,0m,1m,0m,1d 16m
+PLA-7041,Story,Platform Admin,0,0,0,23,0,0,0,0m,0m,0m,22h 24m,0m,0m,0m
+PLA-7040,Story,Platform Admin,146,100,24,46,1,0,315,6d 1h 21m,4d 3h 51m,23h 13m,1d 21h 49m,16m,0m,13d 2h 28m
+PLA-7035,Story,Platform Admin,0,0,0,44,72,0,0,0m,0m,0m,1d 19h 33m,2d 23h 30m,0m,0m
+PLA-7030,Story,Platform Admin,146,71,2,47,79,0,343,6d 1h 9m,2d 22h 58m,1h 26m,1d 22h 5m,3d 6h 26m,0m,14d 6h 2m
+PLA-7029,Story Bug,Platform Admin,2,0,1,1,0,0,2,1h 9m,0m,5m,19m,0m,0m,1h 33m
+PLA-7027,Story,Platform Admin,144,0,0,23,0,0,167,5d 23h 36m,0m,0m,22h 41m,0m,0m,6d 22h 16m
+PLA-7026,Story,Platform Admin,24,0,0,0,0,0,24,23h 8m,0m,0m,0m,0m,0m,23h 8m
+PLA-7024,Story Bug,Platform Admin,27,25,20,7,0,0,78,1d 2h 59m,1d 7m,20h,6h 23m,0m,0m,3d 5h 27m
+PLA-7023,Bug,Platform Admin,0,0,0,0,0,0,0,0m,0m,0m,0m,0m,0m,0m
+PLA-7022,Story,Platform Admin,1,121,25,51,2,0,197,6m,5d 41m,1d 6m,2d 2h 1m,1h 47m,0m,8d 4h 39m
+PLA-7021,Story Bug,Platform Admin,0,5,1,94,0,0,0,0m,4h 38m,47m,3d 21h 17m,0m,0m,0m
+PLA-7020,Bug,Platform Admin,122,2,2,2,0,0,127,5d 1h 5m,1h 27m,1h 54m,1h 42m,0m,0m,5d 6h 6m
+PLA-7019,Bug,Platform Admin,40,29,3,1,0,0,71,1d 15h 38m,1d 4h 4m,2h 19m,6m,0m,0m,2d 22h 6m
+PLA-7013,Story,Platform Admin,25,24,1,75,17,0,140,1d 5m,23h 21m,27m,3d 2h 29m,16h 51m,0m,5d 19h 12m
+PLA-7012,Story,Platform Admin,53,25,24,69,26,0,194,2d 4h 20m,1d 10m,23h 59m,2d 20h 17m,1d 1h 5m,0m,8d 1h 48m
+PLA-7011,Story,Platform Admin,76,26,23,24,70,0,216,3d 3h 18m,1d 1h 8m,22h 17m,23h 12m,2d 21h 57m,0m,8d 23h 50m
+PLA-7010,Story Bug,Platform Admin,5,0,1,23,0,0,27,4h 3m,0m,33m,22h 17m,0m,0m,1d 2h 52m
+PLA-7007,Story,Platform Admin,49,0,0,0,0,0,49,2d 24m,0m,0m,0m,0m,0m,2d 24m
+PLA-7004,Bug,Platform Admin,0,0,0,1,0,0,0,0m,0m,0m,3m,0m,0m,0m
+PLA-7000,Story,Platform Admin,0,0,0,8,0,0,0,0m,0m,0m,7h 18m,0m,0m,0m
+PLA-6999,Story,Platform Admin,379,54,6,68,90,0,595,15d 18h 34m,2d 5h 37m,5h 47m,2d 19h 39m,3d 17h 11m,0m,24d 18h 44m
+PLA-6998,Story,Platform Admin,213,24,4,25,237,0,500,8d 20h 33m,23h 35m,3h 12m,1d 27m,9d 20h 7m,0m,20d 19h 52m
+PLA-6997,Story,Platform Admin,0,0,0,24,0,0,0,0m,0m,0m,23h 54m,0m,0m,0m
+PLA-6996,Story,Platform Admin,269,0,0,0,0,0,269,11d 4h 34m,0m,0m,0m,0m,0m,11d 4h 34m
+PLA-6994,Bug,Platform Admin,0,2,17,2,0,0,0,0m,1h 24m,16h 19m,1h 49m,0m,0m,0m
+PLA-6990,Bug,Platform Admin,26,77,20,1,0,0,122,1d 1h 15m,3d 4h 40m,19h 31m,6m,0m,0m,5d 1h 27m
+PLA-6987,Story,Platform Admin,48,0,0,0,0,0,48,1d 23h 47m,0m,0m,0m,0m,0m,1d 23h 47m
+PLA-6986,Story,Platform Admin,624,0,0,0,0,0,624,25d 23h 48m,0m,0m,0m,0m,0m,25d 23h 48m
+PLA-6985,Story,Platform Admin,93,0,0,0,0,0,93,3d 20h 21m,0m,0m,0m,0m,0m,3d 20h 21m
+PLA-6982,Story,Platform Admin,2,0,0,83,0,0,84,1h 3m,0m,0m,3d 10h 2m,0m,0m,3d 11h 5m
+PLA-6979,Story,Platform Admin,68,0,0,72,0,0,140,2d 19h 34m,0m,0m,2d 23h 40m,0m,0m,5d 19h 13m
+PLA-6976,Story,Platform Admin,24,0,29,64,0,0,116,23h 31m,0m,1d 4h 46m,2d 15h 40m,0m,0m,4d 19h 56m
+PLA-6973,Story,Platform Admin,28,0,4,93,0,0,124,1d 3h 20m,0m,3h 24m,3d 20h 31m,0m,0m,5d 3h 14m
+PLA-6969,Story,Platform Admin,6,0,0,0,0,0,6,5h 36m,0m,0m,0m,0m,0m,5h 36m
+PLA-6968,Story,Platform Admin,97,0,92,173,0,26,360,4d 39m,0m,3d 19h 34m,7d 4h 52m,0m,1d 1h 25m,14d 23h 59m
+PLA-6967,Bug,Platform Admin,1,3,1,1,0,0,5,30m,2h 20m,58m,21m,0m,0m,4h 5m
+PLA-6966,Bug,Platform Admin,0,0,1,1,43,0,0,0m,0m,14m,6m,1d 18h 25m,0m,0m
+PLA-6965,Story,Platform Admin,0,0,0,72,0,0,0,0m,0m,0m,2d 23h 34m,0m,0m,0m
+PLA-6964,Bug,Platform Admin,24,21,3,2,0,0,48,23h 31m,20h 21m,2h 27m,1h 17m,0m,0m,1d 23h 35m
+PLA-6953,Story,Platform Admin,19,0,2,97,0,0,118,18h 30m,0m,1h 54m,4d 44m,0m,0m,4d 21h 7m
+PLA-6952,Story,Platform Admin,0,0,0,29,0,0,0,0m,0m,0m,1d 4h 37m,0m,0m,0m
+PLA-6936,Story,Platform Admin,240,222,8,13,26,0,483,9d 23h 46m,9d 5h 54m,7h 30m,12h 58m,1d 1h 27m,0m,20d 2h 6m
+PLA-6921,Story,Platform Admin,200,116,43,125,98,0,580,8d 7h 46m,4d 19h 54m,1d 18h 6m,5d 4h 19m,4d 1h 13m,0m,24d 3h 15m
+PLA-6911,Story,Platform Admin,2,114,1,0,49,0,164,1h 29m,4d 17h 40m,26m,0m,2d 10m,0m,6d 19h 45m
+PLA-6908,Story,Platform Admin,52,0,0,0,0,0,52,2d 3h 25m,0m,0m,0m,0m,0m,2d 3h 25m
+PLA-6907,Story Bug,Platform Admin,0,165,3,1,0,0,0,0m,6d 20h 53m,2h 41m,2m,0m,0m,0m
+PLA-6900,Story,Platform Admin,117,0,0,0,0,0,117,4d 20h 50m,0m,0m,0m,0m,0m,4d 20h 50m
+PLA-6899,Story,Platform Admin,120,0,0,0,0,0,120,4d 23h 28m,0m,0m,0m,0m,0m,4d 23h 28m
+PLA-6887,Story,Platform Admin,78,23,18,31,1,0,148,3d 5h 22m,22h 13m,17h 12m,1d 6h 31m,6m,0m,6d 3h 22m
+PLA-6886,Story,Platform Admin,121,6,1,95,1,0,221,5d 37m,5h 2m,33m,3d 22h 8m,7m,0m,9d 4h 24m
+PLA-6885,Story,Platform Admin,117,0,0,0,0,0,117,4d 20h 46m,0m,0m,0m,0m,0m,4d 20h 46m
+PLA-6884,Story,Platform Admin,99,3,18,5,165,0,287,4d 2h 36m,2h 13m,17h 8m,4h 37m,6d 20h 9m,0m,11d 22h 41m
+PLA-6883,Story,Platform Admin,23,0,0,0,0,0,23,22h 7m,0m,0m,0m,0m,0m,22h 7m
+PLA-6882,Story,Platform Admin,73,31,19,27,50,0,198,3d 47m,1d 6h 30m,18h 23m,1d 2h 2m,2d 1h 45m,0m,8d 5h 26m
+PLA-6881,Story,Platform Admin,54,73,20,28,1,0,172,2d 5h 37m,3d 6m,19h 2m,1d 3h 5m,11m,0m,7d 3h 59m
+PLA-6880,Story,Platform Admin,168,52,117,0,49,0,384,6d 23h 59m,2d 3h 14m,4d 20h 4m,0m,2d 11m,0m,15d 23h 26m
+PLA-6879,Story,Platform Admin,241,0,0,0,2,0,242,10d 35m,0m,0m,0m,1h 9m,0m,10d 1h 44m
+PLA-6872,Story,Platform Admin,100,25,17,29,22,0,192,4d 3h 59m,1d 25m,16h 10m,1d 5h,21h 39m,0m,7d 23h 11m
+PLA-6870,Story,Platform Admin,3,44,1,147,166,0,359,2h 44m,1d 19h 30m,49m,6d 2h 4m,6d 21h 40m,0m,14d 22h 46m
+PLA-6869,Story,Platform Admin,77,97,17,27,2,0,218,3d 4h 25m,4d 54m,16h 33m,1d 2h 12m,1h 58m,0m,9d 1h 59m
+PLA-6868,Story,Platform Admin,116,28,0,0,0,0,144,4d 19h 54m,1d 3h 21m,0m,0m,0m,0m,5d 23h 14m
+PLA-6865,Story Bug,Platform Admin,74,22,1,22,0,0,117,3d 1h 27m,21h 54m,29m,21h 9m,0m,0m,4d 20h 57m
+PLA-6855,Story,Platform Admin,1,19,27,26,146,0,218,37m,18h 6m,1d 2h 51m,1d 1h 55m,6d 1h 46m,0m,9d 1h 14m
+PLA-6851,Story,Platform Admin,79,70,21,50,30,0,247,3d 6h 34m,2d 21h 23m,20h 3m,2d 1h 7m,1d 5h 22m,0m,10d 6h 27m
+PLA-6847,Story,Platform Admin,3,0,3,1,218,0,223,2h 2m,0m,2h 50m,10m,9d 1h 55m,0m,9d 6h 56m
+PLA-6839,Story,Platform Admin,125,48,1,2,1,307,482,5d 4h 38m,1d 23h 38m,45m,1h 20m,36m,12d 18h 43m,20d 1h 38m
+PLA-6823,Story,Platform Admin,75,117,25,219,4,0,437,3d 2h 20m,4d 20h 7m,1d 4m,9d 2h 1m,3h 50m,0m,18d 4h 21m
+PLA-6820,Story,Platform Admin,116,73,21,72,27,0,307,4d 19h 4m,3d 21m,20h 14m,2d 23h 44m,1d 2h 52m,0m,12d 18h 14m
+PLA-6815,Story,Platform Admin,97,49,1,22,51,0,218,4d 33m,2d 46m,42m,21h 12m,2d 2h 17m,0m,9d 1h 28m
+PLA-6766,Story,Platform Admin,267,43,3,96,236,0,644,11d 2h 11m,1d 18h 52m,2h 54m,4d,9d 19h 20m,0m,26d 19h 15m
+PLA-6731,Story,Platform Admin,117,0,1,123,0,0,364,4d 20h 6m,0m,29m,5d 2h 49m,0m,0m,15d 3h 34m
+PLA-6683,Bug,Platform Admin,1,26,5,90,0,0,120,21m,1d 1h 8m,4h 36m,3d 17h 31m,0m,0m,4d 23h 35m
+PLA-6636,Story,Platform Admin,95,25,4,163,75,0,360,3d 22h 33m,1d 4m,3h 35m,6d 18h 43m,3d 2h 20m,0m,14d 23h 13m
+PLA-6632,Story,Platform Admin,0,97,17,29,1,0,0,0m,4d 49m,16h 34m,1d 4h 2m,10m,0m,0m
+PLA-6631,Story,Platform Admin,52,0,0,0,47,0,52,2d 3h 45m,0m,0m,0m,1d 22h 13m,0m,2d 3h 45m
+PLA-6630,Story,Platform Admin,96,23,19,27,145,0,308,3d 23h 58m,22h 41m,18h 49m,1d 2h 1m,6d 13m,0m,12d 19h 40m
+PLA-6488,Story,Platform Admin,101,0,0,0,26,0,126,4d 4h 21m,0m,0m,0m,1d 1h 22m,0m,5d 5h 42m
+PLA-6487,Story,Platform Admin,220,0,0,2,236,1,456,9d 3h 3m,0m,0m,1h 4m,9d 19h 49m,2m,18d 23h 55m
+PLA-6431,Story,Platform Admin,146,0,24,5,194,0,367,6d 1h 34m,0m,23h 41m,4h 25m,8d 1h 1m,0m,15d 6h 38m
+PLA-6018,Story,Platform Admin,262,9,17,24,1,0,311,10d 21h 46m,8h 20m,16h 30m,23h 4m,45m,0m,12d 22h 21m
