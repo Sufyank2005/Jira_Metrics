@@ -3,7 +3,6 @@ from collections import defaultdict
 from jira import JIRA
 import csv
 
-
 class JiraDailyWIPProject:
     def __init__(self, jira_url=None, email=None, api_token=None):
         self.jira_url = jira_url
@@ -179,6 +178,7 @@ class JiraDailyWIPProject:
 
                 # Blank line between sections
                 writer.writerow([])
+        return filename
 
         print(f"\nCSV export complete: {filename}")
 
