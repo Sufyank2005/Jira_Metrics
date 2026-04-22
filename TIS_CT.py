@@ -1,34 +1,19 @@
-import json
+import csv
 from datetime import datetime, timedelta
-from jira import JIRA
+import math
+from jira import JIRA, Issue
 
 class JiraTimeInStatusProject:
-    def __init__(self, file_name=None, jira_domain=None, email=None):
-        # JSON file path 
-        self.file_name = file_name
-        self.data_store = {}
-
+    def __init__(self, jira_domain=None, email=None, api_token=None):
         # Jira connection details 
         self.jira_domain = jira_domain
         self.email = email
-        self.api_token = "ATATT3xFfGF0lreP5xlVlVwbqNKLfl9oBrUrGes4Sk86KuBzMWTCIeCo14PbAl7xrIKKZvyWngLAURJ10KMOrELMRVJvcI7MOeoeG9VUwdDSAwcKxIix1dPd5HBFCJAP17dJugOLaZnN7A0n_Cg7c9U6rAuqUasIYZy3TZxkIKO33JFdKKTGSJI=0003FA17"
+        self.api_token = api_token
         self.jira = None
 
         # Results per ticket
         self.results = {}
 
-    # --- JSON loader (unchanged) ---
-    def load_json_file(self):
-        try:
-            with open(self.file_name, 'r', encoding='utf-8') as f:
-                self.data_store = json.load(f)
-                print(f"Successfully imported: {self.file_name}")
-        except FileNotFoundError:
-            print(f"Warning: {self.file_name} not found.")
-        except UnicodeDecodeError:
-            print(f"Encoding Error: {self.file_name} requires UTF-8.")
-
-    # --- Jira connection ---
     def connect_to_jira(self):
         """Authenticate to Jira Cloud using API token."""
         if self.jira_domain and self.email and self.api_token:
@@ -62,8 +47,7 @@ class JiraTimeInStatusProject:
         if minutes > 0: parts.append(f"{minutes}m")
         return " ".join(parts) if parts else "0m"
 
-    # --- Unified calculation for JSON or Jira issues ---
-    def calculate_time_in_status(self, issue_key=None, issue_summary=None, changelog=None):
+    def calculate_time_in_status(self, issue=None, issue_key=None, issue_summary=None, changelog=None):
         transitions = []
         for history in changelog:
             for item in history.get("items", []):
@@ -97,9 +81,13 @@ class JiraTimeInStatusProject:
             cycle_hours = self.business_hours_between(dev_start, done_time)
             ticket_results["CycleTime"][issue_key or "Ticket Cycle Time"] = cycle_hours
 
-        self.results[issue_key or issue_summary or "Unknown Ticket"] = ticket_results
+        self.results[issue_key or issue_summary or "Unknown Ticket"] = {
+            "TimeInStatus": ticket_results["TimeInStatus"],
+            "CycleTime": ticket_results["CycleTime"],
+            "Team": getattr(issue.fields.customfield_11870, "name", "Unknown Team"),
+            "Type": getattr(issue.fields.issuetype, "name", "Unknown Type")
+        }
 
-    # --- Jira JQL workflow ---
     def calculate_time_in_status_from_jql(self, jql_query):
         """Run a JQL query with pagination using nextPageToken."""
         all_issues = []
@@ -130,6 +118,7 @@ class JiraTimeInStatusProject:
                         ]
                     })
                 self.calculate_time_in_status(
+                    issue=issue,
                     issue_key=issue.key,
                     issue_summary=issue.fields.summary,
                     changelog=changelog
@@ -140,7 +129,6 @@ class JiraTimeInStatusProject:
                 break
 
         print(f"Successfully pulled {len(all_issues)} issues from Jira")
-
 
     def display_report(self):
         print("\nPMO AUTOMATED METRICS - TIME IN STATUS REPORT")
@@ -162,26 +150,66 @@ class JiraTimeInStatusProject:
                     print(f" • {t:<25}: {self.format_duration(hours)}")
             print("\n" + "="*45)
 
+    def export_to_csv(self, filename_prefix="jira_time_in_status"):
+        """Export results into a CSV file with raw hours first, then formatted columns."""
+        # Define the statuses in the order you want them as columns
+        statuses = ["Development", "Code Review", "Checked In", "QA", "Product Acceptance", "Blocked"]
+        
+        # Generate filename with today's date in month-day-year format
+        today_str = datetime.now().strftime("%m%d%Y")
+        filename = f"{filename_prefix}{today_str}.csv"
+        
+        with open(filename, mode="w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
 
-# --- EXECUTION EXAMPLE (JSON workflow, unchanged) ---
-#my_file = "PLA-6936_changelog.json"
-#my_file = "PLA-6872 Change History.json"
-#my_file = "PLA-6990 Change History.json"
-#my_file = "ADM-3890 Change History.json"
-#my_file = "ADM-3881 Change History.json"
-#project = JiraTimeInStatusProject(file_name=my_file)
-#project.load_json_file()
-#project.calculate_time_in_status(issue_summary=my_file, changelog=project.data_store.get("values", []))
-#project.display_report()
+            # Header row: raw hours first, then formatted columns
+            header = ["Ticket", "Type", "Team"] + statuses + ["Cycle Time"]
+            header += [f"{status} - Formatted" for status in statuses] + ["Cycle Time - Formatted"]
+            writer.writerow(header)
 
-# --- EXECUTION EXAMPLE (Live Jira workflow with JQL) ---
-project = JiraTimeInStatusProject(jira_domain="https://cadent.atlassian.net", email="skhan2@cadent.tv")
-project.connect_to_jira()
-project.calculate_time_in_status_from_jql('''
+            for ticket, metrics in self.results.items():
+                row = [ticket, metrics.get("Type", "Unknown Type"), metrics.get("Team", "Unknown Team")]
+
+                # Raw hours for each status
+                for status in statuses:
+                    hours = metrics["TimeInStatus"].get(status, 0)
+                    row.append(math.ceil(hours))
+
+                # Raw cycle time
+                cycle_hours = 0
+                if metrics["CycleTime"]:
+                    cycle_hours = list(metrics["CycleTime"].values())[0]
+                row.append(math.ceil(cycle_hours))
+
+                # Formatted durations for each status
+                for status in statuses:
+                    hours = metrics["TimeInStatus"].get(status, 0)
+                    row.append(self.format_duration(hours))
+
+                # Formatted cycle time
+                cycle_time_fmt = self.format_duration(cycle_hours)
+                row.append(cycle_time_fmt)
+
+                writer.writerow(row)
+
+        print(f"Results exported to {filename}")
+
+
+# --- EXECUTION  ---
+jira_url = "https://cadent.atlassian.net"
+email = "skhan2@cadent.tv"
+api_token = "ATATT3xFfGF0lreP5xlVlVwbqNKLfl9oBrUrGes4Sk86KuBzMWTCIeCo14PbAl7xrIKKZvyWngLAURJ10KMOrELMRVJvcI7MOeoeG9VUwdDSAwcKxIix1dPd5HBFCJAP17dJugOLaZnN7A0n_Cg7c9U6rAuqUasIYZy3TZxkIKO33JFdKKTGSJI=0003FA17"
+
+project = JiraTimeInStatusProject(jira_domain=jira_url, email=email, api_token=api_token)
+
+jql_query = '''
 type in (story, bug, "Story Bug") 
 and "Program Increment[Dropdown]" =30 
-and "Team[Team]" = ab077377-6409-47c9-92d4-b4755a39b363-70 
+and "Team[Team]"= ab077377-6409-47c9-92d4-b4755a39b363-70  
 and project != "Google Cloud Migration" 
 and status = Done
-''')
+'''
+project.connect_to_jira()
+project.calculate_time_in_status_from_jql(jql_query)
 project.display_report()
+project.export_to_csv()
