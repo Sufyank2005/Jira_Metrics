@@ -28,22 +28,23 @@ if st.button("Run Daily WIP Report"):
 
 # --- Throughput ---
 if st.button("Run Sprint Throughput Report"):
+    # Inputs only appear after button click
     sprint_start = st.date_input("Sprint Start Date", datetime(2026, 1, 28))
     num_sprints = st.number_input("Number of Sprints", min_value=1, max_value=20, value=6)
 
     project = JiraMetricsProject(jira_url, email, api_token)
     project.load_jql_query(jql_query)
 
-    # Convert date to datetime with timezone
     sprint_start_dt = datetime.combine(sprint_start, datetime.min.time()).astimezone()
-
     project.calculate_throughput(sprint_start_dt, num_sprints=num_sprints)
+
     st.text("Sprint Throughput Report:")
     project.display_report()
     filename = project.export_to_csv()
     with open(filename, "rb") as f:
         st.download_button("⬇️ Download Throughput CSV", f, file_name=filename)
     st.success(f"✅ CSV exported as {filename}")
+
 
 # --- Time in Status ---
 if st.button("Run Time in Status Report"):
