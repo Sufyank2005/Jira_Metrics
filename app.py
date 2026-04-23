@@ -27,16 +27,24 @@ if st.button("Run Daily WIP Report"):
     st.success(f"✅ CSV exported as {filename}")
 
 # --- Throughput ---
-if st.button("Run Sprint Throughput Report"):
-    # Inputs only appear after button click
-    sprint_start = st.date_input("Sprint Start Date", datetime(2026, 1, 28))
-    num_sprints = st.number_input("Number of Sprints", min_value=1, max_value=20, value=6)
+st.subheader("Sprint Throughput Report")
 
+# Stage 1: choose inputs
+sprint_start = st.date_input("Sprint Start Date", datetime(2026, 1, 28), key="sprint_start")
+num_sprints = st.number_input("Number of Sprints", min_value=1, max_value=20, value=6, key="num_sprints")
+
+if st.button("Confirm Sprint Settings"):
+    st.session_state["confirmed_sprint_start"] = sprint_start
+    st.session_state["confirmed_num_sprints"] = num_sprints
+    st.success("✅ Sprint settings saved. Now click Generate Report.")
+
+# Stage 2: generate report only after confirmation
+if "confirmed_sprint_start" in st.session_state and st.button("Generate Throughput Report"):
     project = JiraMetricsProject(jira_url, email, api_token)
     project.load_jql_query(jql_query)
 
-    sprint_start_dt = datetime.combine(sprint_start, datetime.min.time()).astimezone()
-    project.calculate_throughput(sprint_start_dt, num_sprints=num_sprints)
+    sprint_start_dt = datetime.combine(st.session_state["confirmed_sprint_start"], datetime.min.time()).astimezone()
+    project.calculate_throughput(sprint_start_dt, num_sprints=st.session_state["confirmed_num_sprints"])
 
     st.text("Sprint Throughput Report:")
     project.display_report()
