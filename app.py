@@ -33,7 +33,10 @@ if st.button("Run Sprint Throughput Report"):
 
     project = JiraMetricsProject(jira_url, email, api_token)
     project.load_jql_query(jql_query)
-    sprint_start_dt = datetime.combine(sprint_start, datetime.min.time())
+
+    # Convert date to datetime with timezone
+    sprint_start_dt = datetime.combine(sprint_start, datetime.min.time()).astimezone()
+
     project.calculate_throughput(sprint_start_dt, num_sprints=num_sprints)
     st.text("Sprint Throughput Report:")
     project.display_report()
