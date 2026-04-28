@@ -145,10 +145,8 @@ class JiraMetricsProject:
                             writer.writerow([category, sprint, group, count])
                     else:
                         writer.writerow([category, sprint, team_name, 0])
-        return filename
-
         print(f"CSV export complete: {filename}")
-
+        return filename
 
 # --- EXECUTION ---
 
