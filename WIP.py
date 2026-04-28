@@ -178,12 +178,8 @@ class JiraDailyWIPProject:
 
                 # Blank line between sections
                 writer.writerow([])
-        return filename
-
         print(f"\nCSV export complete: {filename}")
-
-
-
+        return filename
 
 # --- EXECUTION ---
 
