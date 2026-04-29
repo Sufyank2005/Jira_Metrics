@@ -148,7 +148,6 @@ class JiraMetricsProject:
         print(f"CSV export complete: {filename}")
         return filename
 
-
 # --- EXECUTION ---
 
 jira_url = "https://cadent.atlassian.net"
