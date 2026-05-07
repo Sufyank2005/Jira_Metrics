@@ -1,7 +1,7 @@
 import csv
 from datetime import datetime, timedelta
 import math
-from jira import JIRA, Issue
+from jira import JIRA, Issue, JIRAError
 
 class JiraTimeInStatusProject:
     def __init__(self, jira_domain=None, email=None, api_token=None):
@@ -15,15 +15,21 @@ class JiraTimeInStatusProject:
         self.results = {}
 
     def connect_to_jira(self):
-        """Authenticate to Jira Cloud using API token."""
+        """Authenticate to Jira Cloud using API token and validate immediately."""
         if self.jira_domain and self.email and self.api_token:
-            self.jira = JIRA(
-                server=self.jira_domain,
-                basic_auth=(self.email, self.api_token)
-            )
-            print("Connected to Jira successfully.")
+            try:
+                self.jira = JIRA(
+                    server=self.jira_domain,
+                    basic_auth=(self.email, self.api_token)
+                )
+                # Force authentication check
+                self.jira.myself()
+                print("✅ Connected to Jira successfully.")
+            except JIRAError as e:
+                print(f"❌ Jira authentication failed: {e.text}")
+                self.jira = None
         else:
-            print("Missing Jira connection details.")
+            print("❌ Missing Jira connection details.")
 
     def business_hours_between(self, start, end):
         """Calculate hours between two datetimes, excluding weekends."""
@@ -89,46 +95,60 @@ class JiraTimeInStatusProject:
         }
 
     def calculate_time_in_status_from_jql(self, jql_query):
-        """Run a JQL query with pagination using nextPageToken."""
-        all_issues = []
-        next_page_token = None
+        """Run a JQL query with pagination using nextPageToken and error handling."""
+        if not self.jira:
+            print("❌ Not connected to Jira. Please check credentials.")
+            return
 
-        while True:
-            issues = self.jira.enhanced_search_issues(
-                jql_query,
-                expand="changelog",
-                maxResults=100,
-                nextPageToken=next_page_token
-            )
+        try:
+            all_issues = []
+            next_page_token = None
 
-            all_issues.extend(issues)
-
-            for issue in issues:
-                changelog = []
-                for history in issue.changelog.histories:
-                    changelog.append({
-                        "created": history.created,
-                        "items": [
-                            {
-                                "field": item.field,
-                                "fromString": item.fromString,
-                                "toString": item.toString
-                            }
-                            for item in history.items
-                        ]
-                    })
-                self.calculate_time_in_status(
-                    issue=issue,
-                    issue_key=issue.key,
-                    issue_summary=issue.fields.summary,
-                    changelog=changelog
+            while True:
+                issues = self.jira.enhanced_search_issues(
+                    jql_query,
+                    expand="changelog",
+                    maxResults=100,
+                    nextPageToken=next_page_token
                 )
 
-            next_page_token = getattr(issues, "nextPageToken", None)
-            if not next_page_token:
-                break
+                if not issues:
+                    print("⚠️ No issues found for the given JQL query.")
+                    break
 
-        print(f"Successfully pulled {len(all_issues)} issues from Jira")
+                all_issues.extend(issues)
+
+                for issue in issues:
+                    changelog = []
+                    for history in issue.changelog.histories:
+                        changelog.append({
+                            "created": history.created,
+                            "items": [
+                                {
+                                    "field": item.field,
+                                    "fromString": item.fromString,
+                                    "toString": item.toString
+                                }
+                                for item in history.items
+                            ]
+                        })
+                    self.calculate_time_in_status(
+                        issue=issue,
+                        issue_key=issue.key,
+                        issue_summary=issue.fields.summary,
+                        changelog=changelog
+                    )
+
+                next_page_token = getattr(issues, "nextPageToken", None)
+                if not next_page_token:
+                    break
+
+            print(f"✅ Successfully pulled {len(all_issues)} issues from Jira")
+
+        except JIRAError as e:
+            print(f"❌ JQL query failed: {e.text}")
+        except Exception as e:
+            print(f"❌ Unexpected error: {str(e)}")
 
     def display_report(self):
         print("\nPMO AUTOMATED METRICS - TIME IN STATUS REPORT")
@@ -152,49 +172,35 @@ class JiraTimeInStatusProject:
 
     def export_to_csv(self, filename_prefix="TIS_CT"):
         """Export results into a CSV file with raw hours first, then formatted columns."""
-        # Define the statuses in the order you want them as columns
         statuses = ["Development", "Code Review", "Checked In", "QA", "Product Acceptance", "Blocked"]
-        
-        # Generate filename with today's date in month-day-year format
         today_str = datetime.now().strftime("%m%d%Y")
         filename = f"{filename_prefix}{today_str}.csv"
         
         with open(filename, mode="w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
-
-            # Header row: raw hours first, then formatted columns
             header = ["Ticket", "Type", "Team"] + statuses + ["Cycle Time"]
             header += [f"{status} - Formatted" for status in statuses] + ["Cycle Time - Formatted"]
             writer.writerow(header)
 
             for ticket, metrics in self.results.items():
                 row = [ticket, metrics.get("Type", "Unknown Type"), metrics.get("Team", "Unknown Team")]
-
-                # Raw hours for each status
                 for status in statuses:
                     hours = metrics["TimeInStatus"].get(status, 0)
                     row.append(math.ceil(hours))
-
-                # Raw cycle time
                 cycle_hours = 0
                 if metrics["CycleTime"]:
                     cycle_hours = list(metrics["CycleTime"].values())[0]
                 row.append(math.ceil(cycle_hours))
-
-                # Formatted durations for each status
                 for status in statuses:
                     hours = metrics["TimeInStatus"].get(status, 0)
                     row.append(self.format_duration(hours))
-
-                # Formatted cycle time
                 cycle_time_fmt = self.format_duration(cycle_hours)
                 row.append(cycle_time_fmt)
-
                 writer.writerow(row)
         print(f"Results exported to {filename}")
         return filename
 
-# --- EXECUTION  ---
+# --- EXECUTION ---
 jira_url = "https://cadent.atlassian.net"
 email = "skhan2@cadent.tv"
 api_token = "ATATT3xFfGF0lreP5xlVlVwbqNKLfl9oBrUrGes4Sk86KuBzMWTCIeCo14PbAl7xrIKKZvyWngLAURJ10KMOrELMRVJvcI7MOeoeG9VUwdDSAwcKxIix1dPd5HBFCJAP17dJugOLaZnN7A0n_Cg7c9U6rAuqUasIYZy3TZxkIKO33JFdKKTGSJI=0003FA17"

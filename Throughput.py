@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-from jira import JIRA
+from jira import JIRA, JIRAError
 import csv
 
 def generate_sprints(start_date, num_sprints=6, sprint_length_days=14):
@@ -23,31 +23,49 @@ class JiraMetricsProject:
             "Story Bugs": {"Throughput": {}}
         }
         if jira_url and email and api_token:
-            self.jira = JIRA(server=jira_url, basic_auth=(email, api_token))
+            try:
+                self.jira = JIRA(server=jira_url, basic_auth=(email, api_token))
+                # Force authentication check
+                self.jira.myself()
+                print("✅ Connected to Jira successfully.")
+            except JIRAError as e:
+                print(f"❌ Jira authentication failed: {e.text}")
+                self.jira = None
         else:
             self.jira = None
+            print("❌ Missing Jira connection details.")
 
     def load_jql_query(self, jql):
         if not self.jira:
-            print("Jira connection not initialized. Provide jira_url, email, and api_token.")
+            print("❌ Jira connection not initialized. Provide jira_url, email, and api_token.")
             return
         
-        all_issues = []
-        next_page_token = None
-        
-        while True:
-            issues = self.jira.enhanced_search_issues(
-                jql,
-                maxResults=100,
-                nextPageToken=next_page_token
-            )
-            all_issues.extend([issue.raw for issue in issues])
-            next_page_token = getattr(issues, "nextPageToken", None)
-            if not next_page_token:
-                break
+        try:
+            all_issues = []
+            next_page_token = None
+            
+            while True:
+                issues = self.jira.enhanced_search_issues(
+                    jql,
+                    maxResults=100,
+                    nextPageToken=next_page_token
+                )
+                if not issues:
+                    print("⚠️ No issues found for the given JQL query.")
+                    break
 
-        self.data_store = {"issues": all_issues}
-        print(f"Successfully pulled {len(all_issues)} issues from Jira")
+                all_issues.extend([issue.raw for issue in issues])
+                next_page_token = getattr(issues, "nextPageToken", None)
+                if not next_page_token:
+                    break
+
+            self.data_store = {"issues": all_issues}
+            print(f"✅ Successfully pulled {len(all_issues)} issues from Jira")
+
+        except JIRAError as e:
+            print(f"❌ JQL query failed: {e.text}")
+        except Exception as e:
+            print(f"❌ Unexpected error: {str(e)}")
 
     def calculate_throughput(self, sprint_start, num_sprints=6):
         issues = self.data_store.get('issues', [])
@@ -152,7 +170,7 @@ class JiraMetricsProject:
 
 jira_url = "https://cadent.atlassian.net"
 email = "skhan2@cadent.tv"
-api_token = "ATATT3xFfGF0lreP5xlVlVwbqNKLfl9oBrUrGes4Sk86KuBzMWTCIeCo14PbAl7xrIKKZvyWngLAURJ10KMOrELMRVJvcI7MOeoeG9VUwdDSAwcKxIix1dPd5HBFCJAP17dJugOLaZnN7A0n_Cg7c9U6rAuqUasIYZy3TZxkIKO33JFdKKTGSJI=0003FA17"
+api_token = "ATATT3xFfGF0lreP5xlVwbqNKLfl9oBrUrGes4Sk86KuBzMWTCIeCo14PbAl7xrIKKZvyWngLAURJ10KMOrELMRVJvcI7MOeoeG9VUwdDSAwcKxIix1dPd5HBFCJAP17dJugOLaZnN7A0n_Cg7c9U6rAuqUasIYZy3TZxkIKO33JFdKKTGSJI=0003FA17"
 
 project = JiraMetricsProject(jira_url=jira_url, email=email, api_token=api_token)
 
@@ -165,7 +183,7 @@ and status = Done
 '''
 project.load_jql_query(jql_query)
 
-sprint_start = datetime(2026, 4, 1, tzinfo=datetime.now().astimezone().tzinfo)
+sprint_start = datetime(2026, 1, 28, tzinfo=datetime.now().astimezone().tzinfo)
 
 project.calculate_throughput(sprint_start, num_sprints=6)
 project.display_report()

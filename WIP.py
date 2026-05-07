@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 from collections import defaultdict
-from jira import JIRA
+from jira import JIRA, JIRAError
 import csv
 
 class JiraDailyWIPProject:
@@ -28,32 +28,50 @@ class JiraDailyWIPProject:
         }
 
         if jira_url and email and api_token:
-            self.jira = JIRA(server=jira_url, basic_auth=(email, api_token))
+            try:
+                self.jira = JIRA(server=jira_url, basic_auth=(email, api_token))
+                # Force authentication check
+                self.jira.myself()
+                print("✅ Connected to Jira successfully.")
+            except JIRAError as e:
+                print(f"❌ Jira authentication failed: {e.text}")
+                self.jira = None
         else:
             self.jira = None
+            print("❌ Missing Jira connection details.")
 
     def load_jql_query(self, jql):
         if not self.jira:
-            print("Jira connection not initialized. Provide jira_url, email, and api_token.")
+            print("❌ Jira connection not initialized. Provide jira_url, email, and api_token.")
             return
 
-        all_issues = []
-        next_page_token = None
+        try:
+            all_issues = []
+            next_page_token = None
 
-        while True:
-            issues = self.jira.enhanced_search_issues(
-                jql,
-                expand="changelog",
-                maxResults=100,
-                nextPageToken=next_page_token
-            )
-            all_issues.extend(issues)
-            next_page_token = getattr(issues, "nextPageToken", None)
-            if not next_page_token:
-                break
+            while True:
+                issues = self.jira.enhanced_search_issues(
+                    jql,
+                    expand="changelog",
+                    maxResults=100,
+                    nextPageToken=next_page_token
+                )
+                if not issues:
+                    print("⚠️ No issues found for the given JQL query.")
+                    break
 
-        self.data_store = {"issues": all_issues}
-        print(f"Successfully pulled {len(all_issues)} issues from Jira")
+                all_issues.extend(issues)
+                next_page_token = getattr(issues, "nextPageToken", None)
+                if not next_page_token:
+                    break
+
+            self.data_store = {"issues": all_issues}
+            print(f"✅ Successfully pulled {len(all_issues)} issues from Jira")
+
+        except JIRAError as e:
+            print(f"❌ JQL query failed: {e.text}")
+        except Exception as e:
+            print(f"❌ Unexpected error: {str(e)}")
 
     def process_issue(self, issue, start_date, days=30):
         """Process a single issue's changelog to build daily status counts."""
@@ -99,17 +117,16 @@ class JiraDailyWIPProject:
         now = datetime.now().astimezone()
         start_date = now - timedelta(days=days)
 
-        #  Pre-populate all categories with zeros for each day/status
+        # Pre-populate all categories with zeros for each day/status
         for category in ["Stories", "Bugs", "Story Bugs", "Overall"]:
             for day_offset in range(days + 1):
                 day = (start_date + timedelta(days=day_offset)).date()
                 for status in self.allowed_statuses:
                     _ = self.daily_counts[category][day][status]
 
-        #  Now process issues normally
+        # Process issues normally
         for issue in issues:
             self.process_issue(issue, start_date, days)
-
 
     def display_report(self):
         print("\nPMO AUTOMATED METRICS - DAILY WIP REPORT \n")
@@ -125,42 +142,29 @@ class JiraDailyWIPProject:
 
     def export_to_csv(self, filename=None):
         """Export daily WIP counts to a CSV file with team name in first row and filename."""
-        # Detect the team name from the issues
         team_name = None
         issues = self.data_store.get("issues", [])
         if issues:
-            # Grab the team name from the first issue
             team_name = getattr(issues[0].fields.customfield_11870, "name", "UnknownTeam")
         if not team_name:
             team_name = "UnknownTeam"
 
         safe_team_name = team_name.replace(" ", "_")
-
-        # Build filename if not provided
         today_str = datetime.now().strftime("%m%d%Y")
         if filename is None:
             filename = f"WIP_{safe_team_name}{today_str}.csv"
 
         with open(filename, mode="w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
-
-            # First row: team name
             writer.writerow([team_name])
-
-            # Define the statuses as columns
             statuses = ["Development", "Code Review", "Checked In", "QA", "Product Acceptance", "Blocked"]
 
             for category in ["Stories", "Bugs", "Story Bugs", "Overall"]:
-                # Section header
                 writer.writerow([category])
-                # Column headers
                 writer.writerow(["Date"] + statuses)
-
-                # Collect totals for averages
                 totals = {status: 0 for status in statuses}
                 day_count = len(self.daily_counts[category])
 
-                # Write daily rows
                 for day in sorted(self.daily_counts[category].keys()):
                     row = [day.strftime("%Y-%m-%d")]
                     for status in statuses:
@@ -169,14 +173,12 @@ class JiraDailyWIPProject:
                         row.append(count)
                     writer.writerow(row)
 
-                # Add average row
                 if day_count > 0:
                     avg_row = ["Average WIP"]
                     for status in statuses:
                         avg_row.append(round(totals[status] / day_count, 2))
                     writer.writerow(avg_row)
 
-                # Blank line between sections
                 writer.writerow([])
         print(f"\nCSV export complete: {filename}")
         return filename
@@ -185,7 +187,7 @@ class JiraDailyWIPProject:
 
 jira_url = "https://cadent.atlassian.net"
 email = "skhan2@cadent.tv"
-api_token = "ATATT3xFfGF0lreP5xlVlVwbqNKLfl9oBrUrGes4Sk86KuBzMWTCIeCo14PbAl7xrIKKZvyWngLAURJ10KMOrELMRVJvcI7MOeoeG9VUwdDSAwcKxIix1dPd5HBFCJAP17dJugOLaZnN7A0n_Cg7c9U6rAuqUasIYZy3TZxkIKO33JFdKKTGSJI=0003FA17"
+api_token = "ATATT3xFfGFreP5xlVlVwbqNKLfl9oBrUrGes4Sk86KuBzMWTCIeCo14PbAl7xrIKKZvyWngLAURJ10KMOrELMRVJvcI7MOeoeG9VUwdDSAwcKxIix1dPd5HBFCJAP17dJugOLaZnN7A0n_Cg7c9U6rAuqUasIYZy3TZxkIKO33JFdKKTGSJI=0003FA17"
 
 project = JiraDailyWIPProject(jira_url=jira_url, email=email, api_token=api_token)
 
